@@ -1,0 +1,38 @@
+.hero-body .container .title, .hero-body .container .title-two {
+    font-size: 10vmin;
+}
+
+.hero-body .container {
+    position: fixed;
+    z-index: -1;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-30%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .title {  
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    position: relative;
+    bottom: 170px;
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .title-two {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    position: relative;
+    bottom: 170px;
+  }
