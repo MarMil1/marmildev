@@ -7,6 +7,7 @@ import { About } from './components/About';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Contact } from './components/Contact';
+import { Repository } from './components/Repository';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Projects></Projects>
       <Work></Work>
       <Contact></Contact>
+      <Repository></Repository>
       <Footer></Footer>
     </>
   );

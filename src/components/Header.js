@@ -18,25 +18,25 @@ export const Header = () => {
 
   return (
     <header>
-        <nav 
-            className="navbar is-transparent is-fixed-top" 
-             role="navigation" 
-             aria-label="main navigation"
+        <nav
+            id="navbar" 
+            className="navbar is-transparent" 
+            role="navigation" 
+            aria-label="main navigation"
         >
             <div className="navbar-brand">
                 <Link
-                    activeClass=""
-                    to="hero"
+                    className="image logo"
+                    to="navbar"
                     spy={true}
                     smooth={true}
-                    offset={-70}
                     duration= {500}
                 >
-                    <img src="" 
-                         width="112" 
-                         height="28" 
-                         alt="logo"
-                    />
+                    <svg className="logo-svg-container" height="70px" width="70px" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
+                        <path className="logo-letter-one" d="M10 0 L10 100 L120 0 L230 100 L230 0" />
+                        <path className="logo-letter-two" d="M10 0 L10 100 L120 0 L230 100 L230 0" />
+                        <line className="logo-line" x1="80" y1="180" x2="280" y2="180" />
+                    </svg>
                 </Link>
             
                 <button 
@@ -62,7 +62,7 @@ export const Header = () => {
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        // offset={-70}
                         duration= {500}
                     >
                         About
@@ -74,7 +74,7 @@ export const Header = () => {
                             to="projects"
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            // offset={-70}
                             duration= {500}
                         >
                             Projects
@@ -86,7 +86,7 @@ export const Header = () => {
                             to="work"
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            // offset={-70}
                             duration= {500}
                         >
                             Work
@@ -98,10 +98,10 @@ export const Header = () => {
                             to="contact"
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            // offset={-70}
                             duration= {500}
                         >
-                            Contact Me
+                            Contact
                         </Link>
                     </div>
                 </div>

@@ -1,0 +1,38 @@
+.footer-github {
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.content p {
+    color: white;
+    font-weight: 500;
+}
+
+.fa-github, .fa-codepen {
+    color: white;
+}
+
+.fa-github:hover, .fa-codepen:hover {
+    color: #e9e9e9;
+}
+
+.footer-nav {
+    font-weight: 500;
+    color: white;
+}
+
+.footer-navigation {
+    margin-top: 50px;
+}
+
+.logo-svg-container-footer {
+    transform: scale(.40);
+}
+
+.footer-logo {
+    stroke: white;
+}
+
+.footer .content figure {
+    margin: 0;
+}

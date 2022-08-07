@@ -1,0 +1,64 @@
+.project-container {
+    border-radius: 10px;
+    height: 235px;
+    width: 345px !important;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.figure-container {
+    overflow: hidden;
+    border-radius: 10px;
+    transform: scale(0.8);
+}
+
+.logo-height {
+    height: 105px;
+}
+
+.project-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-description-container, .project-description, .project-links {
+    animation: showUp .1s 0s ease-in;
+}
+
+@keyframes showUp {
+    0% {
+        transform: translate(0px, 53px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.project-description {
+    color: rgb(42, 42, 42);
+    font-size: 1rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-link a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.blur-filter {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
