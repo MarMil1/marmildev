@@ -1,3 +1,11 @@
 .projects {
-    background-color: skyblue;
+    background-color: white;
+}
+
+.projects-container {
+    max-width: 1190px !important;
+}
+
+.see-btn {
+    margin-top: 50px;
 }

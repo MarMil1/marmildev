@@ -1,3 +1,26 @@
 .contact {
-    background-color: gold;
+    background-color: #ef5f14;
+    color: white;
+}
+
+.contact-idea {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.fa-linkedin, .fa-envelope {
+    color: white;
+}
+
+.fa-linkedin:hover, .fa-envelope:hover {
+    color: #d3d3d3;
+}
+
+.contact-item {
+    margin-bottom: 40px;
+}
+
+.align-items {
+    align-items: center;
 }

@@ -1,3 +1,8 @@
 .about {
-    background-color: lightgreen;
+    background-color: #3e8ed0;
+    color: white;
 }
+.subtitle {
+    color: inherit;
+}
+

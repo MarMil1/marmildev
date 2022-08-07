@@ -3,8 +3,24 @@
 }
 
 .navbar {
-    height: 70px;
+    padding: 30px 30px 10px 30px;
 }
+
+.navbar-brand {
+    align-items: center;
+}
+
+.navbar-burger:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo-svg-container {
+    transform: scale(.90);
+  }
 
 .navbar .navbar-brand .navbar-burger {
     height: 70px;
@@ -23,7 +39,7 @@ a.navbar-item:hover {
 }
 
 .navbar-menu.is-active {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 @media screen and (max-width: 1023px) {
