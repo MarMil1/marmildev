@@ -11,7 +11,7 @@ export const Projects = () => {
     if (isOpen) {
       return projectData;
     }
-    return projectData.slice(0, 4);
+    return projectData.slice(0, 6);
   }
 
   return (
@@ -38,8 +38,8 @@ export const Projects = () => {
                 )}
             </div>
           </div>
-          <button className="button see-btn is-info is-outlined is-rounded" onClick={toggleProjects}>
-            {isOpen ? 'Less' : 'More'}
+          <button className="button see-btn is-info is-rounded" onClick={toggleProjects}>
+            {isOpen ? 'View Less Projects' : 'View More Projects'}
           </button>
         </div>
     </section>

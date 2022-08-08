@@ -6,7 +6,7 @@ export const Work = () => {
     <section id="work" className="work section is-large is-white has-text-centered has-border-top">
       <div className="container is-narrow">
         <div className="work-title">
-          Companies I have worked with
+          Companies I've worked with
         </div>
         <div className="work-grid">
           <div className="columns is-multiline is-mobile">
