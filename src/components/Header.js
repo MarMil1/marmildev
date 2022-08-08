@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/header.css'
 import { Link } from "react-scroll";
 
 export const Header = () => {
+    const [click, setClick] = useState(false);
+    const isClicked = () => setClick(!click);
+
     useEffect(() => {
         // Open/Close responsive navbar   
         const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -31,11 +34,30 @@ export const Header = () => {
                     spy={true}
                     smooth={true}
                     duration= {500}
+                    onClick={isClicked}
                 >
-                    <svg className="logo-svg-container" height="70px" width="70px" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet">
-                        <path className="logo-letter-one" d="M10 0 L10 100 L120 0 L230 100 L230 0" />
-                        <path className="logo-letter-two" d="M10 0 L10 100 L120 0 L230 100 L230 0" />
-                        <line className="logo-line" x1="80" y1="180" x2="280" y2="180" />
+                    <svg 
+                        className="logo-svg-container" 
+                        height="70px" 
+                        width="70px" 
+                        viewBox="0 0 300 300" 
+                        preserveAspectRatio="xMidYMid meet"
+                    >
+                        <path 
+                            className={click ? 'logo-letter-one rotate-one' : 'logo-letter-one'}
+                            d="M10 0 L10 100 L120 0 L230 100 L230 0" 
+                        />
+                        <path 
+                            className={click ? 'logo-letter-two rotate-two' : 'logo-letter-two'}
+                            d="M10 0 L10 100 L120 0 L230 100 L230 0" 
+                        />
+                        <line 
+                            className={click ? 'logo-line logo-line-shake' : 'logo-line'}
+                            x1="80" 
+                            y1="180" 
+                            x2="280" 
+                            y2="180" 
+                        />
                     </svg>
                 </Link>
             
@@ -58,11 +80,10 @@ export const Header = () => {
                 <div className="navbar-end">
                     <div className="navbar-item">
                     <Link
-                        activeClass="active"
+                        className="active"
                         to="about"
                         spy={true}
                         smooth={true}
-                        // offset={-70}
                         duration= {500}
                     >
                         About
@@ -70,11 +91,10 @@ export const Header = () => {
                     </div>
                     <div className="navbar-item">
                         <Link 
-                            activeClass="active"
+                            className="active"
                             to="projects"
                             spy={true}
                             smooth={true}
-                            // offset={-70}
                             duration= {500}
                         >
                             Projects
@@ -82,11 +102,10 @@ export const Header = () => {
                     </div>
                     <div className="navbar-item">
                         <Link 
-                            activeClass="active"
+                            className="active"
                             to="work"
                             spy={true}
                             smooth={true}
-                            // offset={-70}
                             duration= {500}
                         >
                             Work
@@ -98,7 +117,6 @@ export const Header = () => {
                             to="contact"
                             spy={true}
                             smooth={true}
-                            // offset={-70}
                             duration= {500}
                         >
                             Contact

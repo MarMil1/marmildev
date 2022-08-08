@@ -15,7 +15,7 @@ export const Repository = () => {
                 Would you like to learn how this website was made?
             </div>
             <div className="container-three-button">
-                <button className="button is-info is-rounded c-three-button is-outlined">
+                <button className="button is-info is-rounded c-three-button">
                     <a href="https://github.com/MarMil1/portfolioSite/tree/main" target="blank">
                         Let's Go!
                     </a>

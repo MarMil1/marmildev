@@ -43,6 +43,8 @@
 
 .c-three-button a {
     color: inherit;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 1023px) {

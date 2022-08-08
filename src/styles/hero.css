@@ -1,6 +1,7 @@
 .hero {
   z-index: -999;
   position: relative;
+  animation: 0.5s ease-in 0s 1 afterSplashFadeIn;
 }
 
 .hero-body .container .title, .hero-body .container .title-two {
@@ -41,46 +42,4 @@
     position: relative;
     bottom: 170px;
   }
-
-  .logo-letter-one {
-    stroke: #3E8ED0;
-    stroke-width: 25; 
-    fill: none; 
-    transform: translate(30px, 165px);
-    /* animation: 1s ease-out 0s 1 moveDown; */
-  }
-
-  .logo-letter-two {
-    stroke: #3E8ED0;
-    stroke-width: 25; 
-    fill: none; 
-    transform: rotate(180deg) rotate(0deg) translate(30px, 165px);
-    transform-origin: 50% 50%;
-    /* animation: 1s ease-out 0s 1 moveUp; */
-  }
-
-  .logo-line {
-    stroke: #ef5f14; 
-    stroke-width: 7; 
-    fill: none;
-    transform: translate(-30px, -30px)
-  }
-
-  /* @keyframes moveDown {
-    0% {
-      transform: translate(30px, 70px);
-    }
-    100% {
-      transform: translate(30px, 165px);
-    }
-  }
-
-  @keyframes moveUp {
-    0% {
-      transform: rotate(180deg) rotate(0deg) translate(30px, 10px);
-    }
-    100% {
-      transform: rotate(180deg) rotate(0deg) translate(30px, 165px);
-    }
-  } */
 

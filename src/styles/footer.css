@@ -30,7 +30,7 @@
 }
 
 .footer-logo {
-    stroke: white;
+    stroke: white !important;
 }
 
 .footer .content figure {
