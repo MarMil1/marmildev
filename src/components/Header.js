@@ -45,17 +45,17 @@ export const Header = () => {
                     >
                         <path 
                             className={click ? 'logo-letter-one rotate-one' : 'logo-letter-one'}
-                            d="M10 0 L10 100 L120 0 L230 100 L230 0" 
+                            d="M10 -10 L10 100 c 0,0 0,1 1,0 L120 0 c 0,0 1,1 0,0 L230 100 c 1,0 0,1 0,0 L230 -10" 
                         />
                         <path 
                             className={click ? 'logo-letter-two rotate-two' : 'logo-letter-two'}
-                            d="M10 0 L10 100 L120 0 L230 100 L230 0" 
+                            d="M10 -10 L10 100 c 0,0 0,1 1,0 L120 0 c 0,0 1,1 0,0 L230 100 c 1,0 0,1 0,0 L230 -10" 
                         />
                         <line 
                             className={click ? 'logo-line logo-line-shake' : 'logo-line'}
-                            x1="80" 
+                            x1="95" 
                             y1="180" 
-                            x2="280" 
+                            x2="265" 
                             y2="180" 
                         />
                     </svg>

@@ -36,3 +36,11 @@
 .footer .content figure {
     margin: 0;
 }
+
+figcaption {
+    margin-bottom: 100px;
+}
+
+figcaption div {
+    font-weight: 500;
+}
