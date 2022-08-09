@@ -3,7 +3,10 @@ import '../styles/repository.css'
 
 export const Repository = () => {
   return (
-    <section id="repository" className="repository is-medium is-white">
+    <section 
+            id="repository" 
+            className="repository is-medium is-white"
+    >
         <div className="container-one">
           
         </div>
@@ -16,7 +19,10 @@ export const Repository = () => {
             </div>
             <div className="container-three-button">
                 <button className="button is-info is-rounded c-three-button">
-                    <a href="https://github.com/MarMil1/portfolioSite/tree/main" target="blank">
+                    <a 
+                        href="https://github.com/MarMil1/portfolioSite/tree/main" 
+                        target="blank"
+                    >
                         Let's Go!
                     </a>
                 </button>

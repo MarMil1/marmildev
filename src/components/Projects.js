@@ -17,7 +17,7 @@ export const Projects = () => {
   return (
     <section 
             id="projects" 
-            className="projects section is-large is-white has-text-centered"
+            className="projects section is-large is-white has-text-centered padding-adjust"
     >
         <div className="container is-narrow projects-container">
           <div className="work-title">
@@ -32,13 +32,16 @@ export const Projects = () => {
                                image={project.image}
                                siteURL={project.siteURL}
                                sourceURL={project.sourceURL}
-                               >
+                  >
                   </ProjectCard>
                   )
                 )}
             </div>
           </div>
-          <button className="button see-btn is-info is-rounded" onClick={toggleProjects}>
+          <button 
+                  className="button see-btn is-info is-rounded" 
+                  onClick={toggleProjects}
+          >
             {isOpen ? 'View Less Projects' : 'View More Projects'}
           </button>
         </div>

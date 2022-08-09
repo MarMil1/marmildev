@@ -18,6 +18,11 @@ code {
     monospace;
 }
 
+.padding-adjust {
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+}
+
 @media screen and (max-width: 490px) {
   * {
       font-size: 15px;

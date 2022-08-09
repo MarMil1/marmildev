@@ -4,7 +4,8 @@
 
 .navbar {
     animation: 0.5s ease-in 0s 1 afterSplashFadeIn;
-    padding: 30px 30px 10px 30px;
+    padding: 20px 20px 20px 20px;
+    background-image: url(../assets/herobackground.png);
 }
 
 .navbar-brand {
@@ -21,7 +22,7 @@
 
 .logo-svg-container {
     transform: scale(.90);
-  }
+}
 
 .navbar .navbar-brand .navbar-burger {
     height: 70px;
