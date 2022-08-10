@@ -17,8 +17,8 @@ export const About = () => {
                 I'm a full stack software developer and I love what I do.
                 Developing software is a passion of mine in which
                 I strive to provide the best solutions for projects I work on. 
-                Take a look at the skills, tools and software that I've had 
-                experience with below.
+                Take a look at the languages, tools, software and databases that I've had 
+                experience with so far below.
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ export const About = () => {
                   </ul>
                 </div>
                 <div className="column">
-                  <div className="about-card-title">Software</div>
+                  <div className="about-card-title">Software/DB</div>
                   <ul>
                     <li>GitHub</li>
                     <li>Jira</li>
