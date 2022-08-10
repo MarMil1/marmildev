@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/marmildev/static/css/main.6fc6abef.css",
-    "main.js": "/marmildev/static/js/main.05fc96a6.js",
+    "main.js": "/marmildev/static/js/main.0648bbce.js",
     "static/js/787.37faa4c4.chunk.js": "/marmildev/static/js/787.37faa4c4.chunk.js",
     "static/media/amh.svg": "/marmildev/static/media/amh.237d5d4bf87b8146093040376d1fa1cb.svg",
     "static/media/rnd.svg": "/marmildev/static/media/rnd.81c8047dc59da4190df47f6fd23ac540.svg",
@@ -19,11 +19,11 @@
     "static/media/sphere.svg": "/marmildev/static/media/sphere.8cb44d81b9a34f62348c7bbfd046bd92.svg",
     "index.html": "/marmildev/index.html",
     "main.6fc6abef.css.map": "/marmildev/static/css/main.6fc6abef.css.map",
-    "main.05fc96a6.js.map": "/marmildev/static/js/main.05fc96a6.js.map",
+    "main.0648bbce.js.map": "/marmildev/static/js/main.0648bbce.js.map",
     "787.37faa4c4.chunk.js.map": "/marmildev/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6fc6abef.css",
-    "static/js/main.05fc96a6.js"
+    "static/js/main.0648bbce.js"
   ]
 }
