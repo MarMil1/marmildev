@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/marmildev/static/css/main.6fc6abef.css",
-    "main.js": "/marmildev/static/js/main.0648bbce.js",
-    "static/js/787.37faa4c4.chunk.js": "/marmildev/static/js/787.37faa4c4.chunk.js",
-    "static/media/amh.svg": "/marmildev/static/media/amh.237d5d4bf87b8146093040376d1fa1cb.svg",
-    "static/media/rnd.svg": "/marmildev/static/media/rnd.81c8047dc59da4190df47f6fd23ac540.svg",
-    "static/media/herobackground.png": "/marmildev/static/media/herobackground.d4eaa6159d47c291109d.png",
-    "static/media/proseeder.svg": "/marmildev/static/media/proseeder.1076fe20c532ef401d6edcb92154c086.svg",
-    "static/media/apismicro.png": "/marmildev/static/media/apismicro.f300f805fa6ad6e61f92.png",
-    "static/media/healthtracker.png": "/marmildev/static/media/healthtracker.1ac6ae4d697e38bfd80f.png",
-    "static/media/adshark.png": "/marmildev/static/media/adshark.dbe9d42a9da873b87949.png",
-    "static/media/bmmnviz.png": "/marmildev/static/media/bmmnviz.977c475bf28c044f2086.png",
-    "static/media/stockwatch.png": "/marmildev/static/media/stockwatch.fb978ad9bcdd54ba7fcb.png",
-    "static/media/bizcards.png": "/marmildev/static/media/bizcards.9a4eaf4a80b40d8e77b6.png",
-    "static/media/stackoverflow.png": "/marmildev/static/media/stackoverflow.517d824470d0fb25982d.png",
-    "static/media/msgen.png": "/marmildev/static/media/msgen.c4799b8ff0f8a8ac9086.png",
-    "static/media/marmil_blog.png": "/marmildev/static/media/marmil_blog.452a0bfd3b567e91498f.png",
-    "static/media/sphere.svg": "/marmildev/static/media/sphere.8cb44d81b9a34f62348c7bbfd046bd92.svg",
-    "index.html": "/marmildev/index.html",
-    "main.6fc6abef.css.map": "/marmildev/static/css/main.6fc6abef.css.map",
-    "main.0648bbce.js.map": "/marmildev/static/js/main.0648bbce.js.map",
-    "787.37faa4c4.chunk.js.map": "/marmildev/static/js/787.37faa4c4.chunk.js.map"
+    "main.css": "/static/css/main.6c1ff821.css",
+    "main.js": "/static/js/main.bb209726.js",
+    "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
+    "static/media/amh.svg": "/static/media/amh.237d5d4bf87b8146093040376d1fa1cb.svg",
+    "static/media/rnd.svg": "/static/media/rnd.81c8047dc59da4190df47f6fd23ac540.svg",
+    "static/media/herobackground.png": "/static/media/herobackground.d4eaa6159d47c291109d.png",
+    "static/media/proseeder.svg": "/static/media/proseeder.1076fe20c532ef401d6edcb92154c086.svg",
+    "static/media/apismicro.png": "/static/media/apismicro.f300f805fa6ad6e61f92.png",
+    "static/media/healthtracker.png": "/static/media/healthtracker.1ac6ae4d697e38bfd80f.png",
+    "static/media/adshark.png": "/static/media/adshark.dbe9d42a9da873b87949.png",
+    "static/media/bmmnviz.png": "/static/media/bmmnviz.977c475bf28c044f2086.png",
+    "static/media/stockwatch.png": "/static/media/stockwatch.fb978ad9bcdd54ba7fcb.png",
+    "static/media/bizcards.png": "/static/media/bizcards.9a4eaf4a80b40d8e77b6.png",
+    "static/media/stackoverflow.png": "/static/media/stackoverflow.517d824470d0fb25982d.png",
+    "static/media/msgen.png": "/static/media/msgen.c4799b8ff0f8a8ac9086.png",
+    "static/media/marmil_blog.png": "/static/media/marmil_blog.452a0bfd3b567e91498f.png",
+    "static/media/sphere.svg": "/static/media/sphere.8cb44d81b9a34f62348c7bbfd046bd92.svg",
+    "index.html": "/index.html",
+    "main.6c1ff821.css.map": "/static/css/main.6c1ff821.css.map",
+    "main.bb209726.js.map": "/static/js/main.bb209726.js.map",
+    "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fc6abef.css",
-    "static/js/main.0648bbce.js"
+    "static/css/main.6c1ff821.css",
+    "static/js/main.bb209726.js"
   ]
 }
