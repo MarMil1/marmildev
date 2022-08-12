@@ -22,8 +22,8 @@ const projectData = [
     'backgroundColor': '#9a8888',
     'description': 'Social journalism publishing platform. Tools: Ruby, Ruby on Rails, HTML, CSS, JS, PostgreSQL.',
     'image': marmil_blog,
-    'siteURL': 'https://sphereblog.herokuapp.com/',
-    'sourceURL': 'https://github.com/MarMil1/sphereblog'
+    'siteURL': 'https://marmilblog.herokuapp.com/',
+    'sourceURL': 'https://github.com/MarMil1/marmilblog'
   },
    {
      'id': 3,
