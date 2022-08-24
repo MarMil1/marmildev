@@ -28,7 +28,7 @@ export const About = () => {
                 <div className="column">
                   <div className="about-card-title">Languages</div>
                   <ul>
-                    <li>JavaSript</li>
+                    <li>JavaScript ES6</li>
                     <li>SQL</li>
                     <li>Python</li>
                     <li>Java</li>
@@ -54,13 +54,13 @@ export const About = () => {
                 <div className="column">
                   <div className="about-card-title">Software/DB</div>
                   <ul>
-                    <li>GitHub</li>
+                    <li>Git</li>
                     <li>Jira</li>
                     <li>MySQL</li>
                     <li>MongoDB</li>
+                    <li>Firebase</li>
                     <li>PostgreSQL</li>
                     <li>Oracle Developer</li>
-                    <li>Firebase</li>
                   </ul>
                 </div>
               </div>
