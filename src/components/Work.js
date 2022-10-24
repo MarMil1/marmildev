@@ -5,7 +5,7 @@ export const Work = () => {
   return (
     <section 
             id="work" 
-            className="work section is-large is-white has-text-centered has-border-top padding-adjust"
+            className="work section is-large is-white has-text-centered has-border-top"
     >
       <div className="container is-narrow">
         <div className="work-title">

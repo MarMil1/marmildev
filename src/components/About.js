@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <section 
             id="about" 
-            className="about section is-large is-white has-text-centered padding-adjust"
+            className="about section is-large is-white has-text-centered"
     >
         <div className="container is-narrow">
           <div className="columns about-title-container is-mobile is-centered">
@@ -14,7 +14,7 @@ export const About = () => {
                 Hello! I'm Marko.
               </div>
               <p className="subtitle is-size-5-desktop has-text-weight-normal">
-                I'm a full stack software developer and I love what I do.
+                I'm a full stack software developer.
                 Developing software is a passion of mine in which
                 I strive to provide the best solutions for projects I work on. 
                 Take a look at the languages, tools, software and databases that I've had 
@@ -22,13 +22,13 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className="box">
+          {/* <div className="box"> */}
             <div className="content">
               <div className="columns is-centered has-text-centered">
-                <div className="column">
+                <div className="column is-one-third">
                   <div className="about-card-title">Languages</div>
                   <ul>
-                    <li>JavaScript ES6</li>
+                    <li>JavaScript</li>
                     <li>SQL</li>
                     <li>Python</li>
                     <li>Java</li>
@@ -38,7 +38,7 @@ export const About = () => {
                     <li>Ruby</li>
                   </ul>
                 </div>
-                <div className="column">
+                <div className="column is-one-third">
                   <div className="about-card-title">Tools</div>
                   <ul>
                     <li>ReactJS</li>
@@ -51,7 +51,7 @@ export const About = () => {
                     <li>VueJS</li>
                   </ul>
                 </div>
-                <div className="column">
+                <div className="column is-one-third">
                   <div className="about-card-title">Software/DB</div>
                   <ul>
                     <li>Git</li>
@@ -65,7 +65,7 @@ export const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </div>
     </section>
   )
