@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c1ff821.css",
-    "main.js": "/static/js/main.b9297693.js",
+    "main.css": "/static/css/main.b4384774.css",
+    "main.js": "/static/js/main.641e087d.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/amh.svg": "/static/media/amh.237d5d4bf87b8146093040376d1fa1cb.svg",
     "static/media/rnd.svg": "/static/media/rnd.81c8047dc59da4190df47f6fd23ac540.svg",
@@ -17,13 +17,15 @@
     "static/media/msgen.png": "/static/media/msgen.c4799b8ff0f8a8ac9086.png",
     "static/media/marmil_blog.png": "/static/media/marmil_blog.452a0bfd3b567e91498f.png",
     "static/media/sphere.svg": "/static/media/sphere.8cb44d81b9a34f62348c7bbfd046bd92.svg",
+    "static/media/layered-waves-haikei-hero.svg": "/static/media/layered-waves-haikei-hero.b3be9f78cb050acea051.svg",
     "index.html": "/index.html",
-    "main.6c1ff821.css.map": "/static/css/main.6c1ff821.css.map",
-    "main.b9297693.js.map": "/static/js/main.b9297693.js.map",
+    "static/media/layered-waves-haikei-about.svg": "/static/media/layered-waves-haikei-about.25e3800cd91a7222c89e.svg",
+    "main.b4384774.css.map": "/static/css/main.b4384774.css.map",
+    "main.641e087d.js.map": "/static/js/main.641e087d.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c1ff821.css",
-    "static/js/main.b9297693.js"
+    "static/css/main.b4384774.css",
+    "static/js/main.641e087d.js"
   ]
 }
