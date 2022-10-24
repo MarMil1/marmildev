@@ -1,7 +1,3 @@
-.projects {
-    background-color: white;
-}
-
 .projects-container {
     max-width: 1190px !important;
 }
@@ -10,4 +6,21 @@
     margin-top: 50px;
     font-weight: 600;
     font-size: 1rem;
+}
+
+.columns.is-centered.is-multiline.is-mobile {
+    display: grid;
+    grid-template-areas: 'child child child';
+}
+
+@media screen and (max-width: 1200px) {
+    .columns.is-centered.is-multiline.is-mobile {
+        grid-template-areas: 'child child' !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .columns.is-centered.is-multiline.is-mobile {
+        grid-template-areas: 'child' !important;
+    }
 }

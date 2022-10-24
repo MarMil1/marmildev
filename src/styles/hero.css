@@ -1,8 +1,14 @@
-.hero {
-  background-image: url(../assets/herobackground.png);
+body {
+  background-image: url('../assets/herobackground.png');
   z-index: -999;
   position: relative;
   animation: 0.5s ease-in 0s 1 afterSplashFadeIn;
+}
+
+.hero {
+  background: url('../assets/layered-waves-haikei-hero.svg') no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-body .container .title, .hero-body .container .title-two {
@@ -10,7 +16,6 @@
 }
 
 .hero-body .container {
-  position: fixed;
   left: 0;
   right: 0;
   z-index: -1;
