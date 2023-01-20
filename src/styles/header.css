@@ -1,11 +1,18 @@
-.navbar.is-fixed-top {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
 .navbar {
-    animation: 0.5s ease-in 0s 1 afterSplashFadeIn;
+    animation: afterSplashFadeIn 0.5s ease-in 0s 1;
+    -webkit-animation: afterSplashFadeIn 0.5s ease-in 0s 1;
+    -moz-animation: afterSplashFadeIn 0.5s ease-in 0s 1;
+    -ms-animation: afterSplashFadeIn 0.5s ease-in 0s 1;
+    -o-animation:afterSplashFadeIn 0.5s ease-in 0s 1;
     padding: 20px 20px 20px 20px;
-    background-image: url(../assets/herobackground.png);
+    background-color: inherit;
+    border-top: 4px solid #3f8ed0;
+
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0) 0%, rgba(62,142,208,0.24833683473389356) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0) 0%, rgba(62,142,208,0.24833683473389356) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0) 0%, rgba(62,142,208,0.24833683473389356) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#3e8ed0",GradientType=1);
 }
 
 .navbar-brand {
@@ -21,7 +28,7 @@
 }
 
 .logo-svg-container {
-    transform: scale(.90);
+    transform: scale(.90) rotate(-90deg);
 }
 
 .navbar .navbar-brand .navbar-burger {
@@ -55,7 +62,7 @@ a.navbar-item:hover {
 }
 
 .logo-letter-one {
-    stroke: #3E8ED0;
+    stroke: #CE7A34;
     stroke-width: 25; 
     fill: none; 
     transform: translate(30px, 170px);
@@ -70,59 +77,66 @@ a.navbar-item:hover {
     transform-origin: 50% 50%;
   }
 
-  .rotate-one {
-    animation: 2s ease 0s 1 logoRotateRight;
-    animation-delay: 0.5s;
+  .rotate-whole-logo:hover {
+    animation: rotateWholeLogo 2s linear infinite;
+    -webkit-animation: rotateWholeLogo 2s linear infinite;
+    -moz-animation: rotateWholeLogo 2s linear infinite;
+    -ms-animation: rotateWholeLogo 2s linear infinite;
+    -o-animation: rotateWholeLogo 2s linear infinite;
   }
 
-  @keyframes logoRotateRight {
+  @keyframes rotateWholeLogo {
     0% {
-        transform: rotate(0deg) translate(30px, 170px);
+        transform: rotate(0deg) scale(0.9);
     }
 
     100% {
-        transform: rotate(-360deg) translate(30px, 170px);
+        transform: rotate(360deg) scale(0.9);
     }
-}
-
-  .rotate-two {
-    animation: 2s ease 0s 1 logoRotateLeft;
-    animation-delay: 0.5s;
   }
 
-  @keyframes logoRotateLeft {
+  @-webkit-keyframes rotateWholeLogo {
     0% {
-        transform: rotate(180deg) translate(30px, 170px);
+        transform: rotate(0deg) scale(0.9);
     }
 
     100% {
-        transform: rotate(-180deg) translate(30px, 170px);
+        transform: rotate(630deg) scale(0.9);
     }
-}
+  }
 
   .logo-line {
-    stroke: #ef5f14; 
+    stroke: #868482; 
     stroke-width: 7; 
     fill: none;
-    transform: translate(-30px, -30px)
+    transform: translate(-30px, -30px);
   }
 
-  .logo-line-shake {
-    transform-origin: 50% 50%;
-    transform: translate(-30px, -30px) rotate(0deg);
-    animation: 0.5s ease 0s 1 logoLineShake;
+  .go-to-top-btn {
+    visibility: hidden;
+    opacity: 1;
+    transition: all 600ms linear;
   }
 
-  @keyframes logoLineShake {
-    0%   {transform: translate(-30px, -30px) rotate(0deg);}
-    10%  {transform: translate(-30px, -30px) rotate(5deg);}
-    20%  {transform: translate(-30px, -30px) rotate(0deg);}
-    30%  {transform: translate(-30px, -30px) rotate(-5deg);}
-    40%  {transform: translate(-30px, -30px) rotate(0deg);}
-    50%  {transform: translate(-30px, -30px) rotate(5deg);}
-    60%  {transform: translate(-30px, -30px) rotate(0deg);}
-    70%  {transform: translate(-30px, -30px) rotate(-5deg);}
-    80%  {transform: translate(-30px, -30px) rotate(0deg);}
-    90%  {transform: translate(-30px, -30px) rotate(5deg);}
-    100% {transform: translate(-30px, -30px) rotate(0deg);}
+  .go-to-top-btn i {
+    font-size: 2rem;
+    padding: 6px 8px;
+    border-radius: 50%;
+    background-color: #3e8ed0;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    cursor: pointer;
+    color: var(--button-text);
+  }
+  
+  .go-to-top-btn i:hover {
+    color: lightgray;
+  }
+
+  .go-to-top-btn-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 600ms, opacity 600ms linear;
   }

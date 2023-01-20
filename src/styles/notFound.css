@@ -1,0 +1,49 @@
+.not-found-container {
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#3e8ed0",GradientType=1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-code {
+    font-size: 4rem;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.error-text, .error-text-two {
+    font-size: 1.5rem;
+    font-weight: 500;
+    z-index: 1;
+    text-align: center;
+}
+
+.error-text-two {
+    margin-bottom: 50px;
+}
+
+.button.is-info.is-rounded.go-back-error {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.not-found-container::before {
+    background: url("../assets/page_not_found.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    opacity: 0.1;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    bottom: 0px;
+    left: 25px;
+    content: "";
+  }
+  

@@ -1,130 +1,157 @@
-import React, { useEffect, useState } from 'react'
-import '../styles/header.css'
+import React, { useEffect } from "react";
+import "../styles/header.css";
 import { Link } from "react-scroll";
+import { ToggleTheme } from "./ToggleTheme";
 
 export const Header = () => {
-    const [click, setClick] = useState(false);
-    const isClicked = () => setClick(!click);
+  // const [click, setClick] = useState(false);
+  // const isClicked = () => setClick(!click);
 
-    useEffect(() => {
-        // Open/Close responsive navbar   
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-            });
-        });
-    }, []);
+  useEffect(() => {
+    /* This is a function that is being called on the navbar burger icon. It is using the
+    `querySelectorAll` method to select all elements with the class `navbar-burger`. It then uses
+    the `forEach` method to iterate over each element and add an event listener to each one. The
+    event listener is a click event that toggles the class `is-active` on the element and the
+    element with the id of `target`. */
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+    $navbarBurgers.forEach((el) => {
+      el.addEventListener("click", () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
+      });
+    });
+
+    const goToTopBtn = document.getElementById("go-to-top-btn");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 300) {
+        goToTopBtn.classList.add("go-to-top-btn-hidden");
+        goToTopBtn.style.visibility = "visible";
+      } else {
+        goToTopBtn.classList.remove("go-to-top-btn-hidden");
+      }
+    });
+  });
 
   return (
     <header>
-        <nav
-            id="navbar" 
-            className="navbar is-transparent" 
-            role="navigation" 
-            aria-label="main navigation"
-        >
-            <div className="navbar-brand">
-                <Link
-                    className="image logo"
-                    to="navbar"
-                    spy={true}
-                    smooth={true}
-                    duration= {500}
-                    onClick={isClicked}
-                >
-                    <svg 
-                        className="logo-svg-container" 
-                        height="70px" 
-                        width="70px" 
-                        viewBox="0 0 300 300" 
-                        preserveAspectRatio="xMidYMid meet"
-                    >
-                        <path 
-                            className={click ? 'logo-letter-one rotate-one' : 'logo-letter-one'}
-                            d="M10 -10 L10 100 c 0,0 0,1 1,0 L120 0 c 0,0 1,1 0,0 L230 100 c 1,0 0,1 0,0 L230 -10" 
-                        />
-                        <path 
-                            className={click ? 'logo-letter-two rotate-two' : 'logo-letter-two'}
-                            d="M10 -10 L10 100 c 0,0 0,1 1,0 L120 0 c 0,0 1,1 0,0 L230 100 c 1,0 0,1 0,0 L230 -10" 
-                        />
-                        <line 
-                            className={click ? 'logo-line logo-line-shake' : 'logo-line'}
-                            x1="95" 
-                            y1="180" 
-                            x2="265" 
-                            y2="180" 
-                        />
-                    </svg>
-                </Link>
-            
-                <button 
-                    className="navbar-burger" 
-                    data-target="navMenu" 
-                    aria-label="menu" 
-                    aria-expanded="false"
-                >
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </button>
-            </div>
-
-            <div 
-                className="navbar-menu is-shadowless has-text-centered" 
-                id="navMenu"
+      <nav
+        id="navbar"
+        className="navbar is-transparent"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div className="navbar-brand">
+          <ToggleTheme />
+          {/* <svg
+              className={
+                click
+                  ? "logo-svg-container rotate-whole-logo"
+                  : "logo-svg-container"
+              }
+              height="70px"
+              width="70px"
+              viewBox="0 0 300 300"
+              preserveAspectRatio="xMidYMid meet"
             >
-                <div className="navbar-end">
-                    <div className="navbar-item">
-                    <Link
-                        className="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        duration= {500}
-                    >
-                        About
-                    </Link>
-                    </div>
-                    <div className="navbar-item">
-                        <Link 
-                            className="active"
-                            to="projects"
-                            spy={true}
-                            smooth={true}
-                            duration= {500}
-                        >
-                            Projects
-                        </Link>
-                    </div>
-                    <div className="navbar-item">
-                        <Link 
-                            className="active"
-                            to="work"
-                            spy={true}
-                            smooth={true}
-                            duration= {500}
-                        >
-                            Work
-                        </Link>
-                    </div>
-                    <div className="navbar-item">
-                        <Link 
-                            className="contact-btn button is-info is-rounded"
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            duration= {500}
-                        >
-                            Contact
-                        </Link>
-                    </div>
-                </div>
+              <path
+                className="logo-letter-one"
+                d="M10 -10 L10 100 c 0,0 0,1 1,0 L120 0 c 0,0 1,1 0,0 L230 100 c 1,0 0,1 0,0 L230 -10"
+              />
+              <path
+                className="logo-letter-two"
+                d="M10 -10 L10 100 c 0,0 0,1 1,0 L120 0 c 0,0 1,1 0,0 L230 100 c 1,0 0,1 0,0 L230 -10"
+              />
+              <line
+                className={click ? "logo-line logo-line-shake" : "logo-line"}
+                x1="95"
+                y1="180"
+                x2="265"
+                y2="180"
+              />
+            </svg> */}
+          {/* </Link> */}
+          <button
+            className="navbar-burger"
+            data-target="navMenu"
+            aria-label="menu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div
+          className="navbar-menu is-shadowless has-text-centered"
+          id="navMenu"
+        >
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <Link
+                className="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                About
+              </Link>
             </div>
-        </nav>
+            <div className="navbar-item">
+              <Link
+                className="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Projects
+              </Link>
+            </div>
+            <div className="navbar-item">
+              <Link
+                className="active"
+                to="work"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Work
+              </Link>
+            </div>
+            <div className="navbar-item">
+              <Link
+                // className="contact-btn button is-info is-rounded"
+                className="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <Link
+        activeClass=""
+        to="navbar"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        <div id="go-to-top-btn" className="go-to-top-btn">
+          <i className="fa fa-2x fa-angle-up"></i>
+        </div>
+      </Link>
     </header>
-  )
-}
+  );
+};

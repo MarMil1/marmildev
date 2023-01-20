@@ -1,55 +1,52 @@
-import React from 'react'
-import '../styles/contact.css'
+import React from "react";
+import "../styles/contact.css";
+import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
   return (
-    <section 
-            id="contact" 
-            className="contact section is-medium is-white has-text-centered padding-adjust"
-    >
-        <div className="container is-narrow">
-          <div className="work-title">
-            Contact
+    <section id="contact" className="contact section">
+      <div className="main-subheading">Contact</div>
+      <div className="contact-container-content">
+        <div className="contact-container-side">
+          <div className="connect-content">
+            Would you like to connect and work together?
           </div>
-          <div className="columns is-multiline is-mobile">
-            <div className="column">
-              <div className="contact-idea">
-                Send me an email or a message on LinkedIn.
-              </div>
-              <div className="columns align-items">
-                <div 
-                    className="column contact-item" 
-                    title="Email from your current device."
-                >
-                  <a href="mailto:marmildev@gmail.com">
-                    <i className="fa-solid fa-envelope fa-2x"></i>
-                  </a>
-                </div>
-                <div 
-                    className="column contact-item" 
-                    title="Scan the QR code to send an email."
-                >
-                  <img 
-                      src="https://chart.googleapis.com/chart?cht=qr&chl=MATMSG%3ATO%3Amarmildev%40gmail.com%3BSUB%3AHi%2C%20I'd%20like%20to%20connect%20with%20you.%3BBODY%3AHi%2C%20Marko.%0A%0AI'm%20interested%20in%20working%20with%20you%20on%20my%20project.%0A%0APlease%20contact%20me%20back.%3B%3B&chs=180x180&choe=UTF-8&chld=L|2" 
-                      rel='nofollow' 
-                      alt='qr code email' 
-                  />
-                </div>
-                <div 
-                    className="column contact-item" 
-                    title="LinkedIn profile URL."
-                >
-                  <a 
-                    href="https://linkedin.com/in/marko-milosavljevic" 
-                    target="blank"
-                  >
-                    <i className="fa-brands fa-linkedin fa-2x"></i>
-                  </a>
-                </div>
-              </div>
+          <div className="contact-container-subheading">
+            Fill out the contact form, or conect with me on{" "}
+            <a
+              href="https://linkedin.com/in/marko-milosavljevic"
+              target="blank"
+            >
+              LinkedIn.{" "}
+            </a>
+            If you'd like to find out more, take a look at my other socials
+            below.
+          </div>
+          <div className="contact-container-socials">
+            <div className="contact-social-item" title="LinkedIn profile.">
+              <a
+                href="https://linkedin.com/in/marko-milosavljevic"
+                target="blank"
+              >
+                <i className="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+            </div>
+            <div className="contact-social-item" title="GitHub profile.">
+              <a href="https://github.com/MarMil1" target="blank">
+                <i className="fa-brands fa-github fa-2x"></i>
+              </a>
+            </div>
+            <div className="contact-social-item" title="Codepen profile.">
+              <a href="https://codepen.io/marmil1" target="blank">
+                <i className="fa-brands fa-codepen fa-2x"></i>
+              </a>
             </div>
           </div>
         </div>
+        <div className="contact-container-form">
+          <ContactForm />
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};

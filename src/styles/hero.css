@@ -1,32 +1,125 @@
-body {
-  background-image: url('../assets/herobackground.png');
-  z-index: -999;
-  position: relative;
-  animation: 0.5s ease-in 0s 1 afterSplashFadeIn;
-}
-
 .hero {
-  background: url('../assets/layered-waves-haikei-hero.svg') no-repeat;
+  height: 90vh;
+  background: rgb(2,0,36);
+  background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#3e8ed0",GradientType=1);
+  position: relative;
+}
+
+.hero-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -300px;
+}
+
+.hero::before {
+  background: url("../assets/developer_activity.svg") no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
+  opacity: 0.1;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  bottom: 0px;
+  left: 25px;
+  content: "";
 }
 
-.hero-body .container .title, .hero-body .container .title-two {
-    font-size: 10vmin;
+.hero-main-title {
+  font-size: 4rem;
+  font-weight: 900;
+  z-index: 1;
 }
 
-.hero-body .container {
-  left: 0;
-  right: 0;
-  z-index: -1;
+.hero-main-body {
+  font-size: 1.5rem;
+  font-weight: 500;
+  z-index: 1;
+  padding-bottom: 60px;
 }
+
+.contact-btn.button.is-info.is-rounded.hero-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.arrow-to-content {
+  color: var(--arrow-to-content);
+  animation: arrowToContent ease-in 5s infinite;
+  -webkit-animation: arrowToContent ease-in 5s infinite;
+  -moz-animation: arrowToContent ease-in 5s infinite;
+  -ms-animation: arrowToContent ease-in 5s infinite;
+  -o-animation: arrowToContent ease-in 5s infinite;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 200px;
+}
+
+.arrow-to-content:hover {
+  color: gray;
+}
+
+@keyframes arrowToContent {
+  6% {
+    transform: translate(-50%, 7px);
+  }
+  10% {
+    transform: translate(-50%, -7px);
+  }
+  16% {
+    transform: translate(-50%, 7px);
+  }
+  24% {
+    transform: translate(-50%, -7px);
+  }
+  32% {
+    transform: translate(-50%, 7px);
+  }
+}
+
+@-webkit-keyframes arrowToContent {
+  6% {
+    transform: translate(-50%, 7px);
+  }
+  10% {
+    transform: translate(-50%, -7px);
+  }
+  16% {
+    transform: translate(-50%, 7px);
+  }
+  24% {
+    transform: translate(-50%, -7px);
+  }
+  32% {
+    transform: translate(-50%, 7px);
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .hero-main-title {
+    font-size: 3rem;
+  }
   
-  .title {  
-    position: relative;
-    bottom: 150px;
+  .hero-main-body {
+    font-size: 1.2rem;
   }
 
-  .title-two {
-    position: relative;
-    bottom: 150px;
+  .contact-btn.button.is-info.is-rounded.hero-btn {
+    font-size: 1rem;
   }
+}
+
+
+@media screen and (max-width: 920px) {
+  .hero::before {
+    background-attachment: scroll;
+  }
+}

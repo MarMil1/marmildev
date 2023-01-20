@@ -1,52 +1,148 @@
 .about {
-    background: url('../assets/layered-waves-haikei-about.svg') no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding-top: 0px !important;
-    padding-bottom: 90px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 100vh;
+    align-items: center;
+    /* background: rgb(2,0,36);
+    background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.5004595588235294) 0%, rgba(62,142,208,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.5004595588235294) 0%, rgba(62,142,208,0) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.5004595588235294) 0%, rgba(62,142,208,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#3e8ed0",GradientType=1); */
 }
+
+.about-text {
+    text-align: start;
+}
+
+.about-bio-content {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
 .subtitle {
     color: inherit;
     margin-bottom: 20px;
 }
 
-.about-card-title {
-    font-size: 1.7rem;
-    font-weight: 600;
+.tech-stack {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tech-stack-item {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+    border-radius: 7px;
+    width: 75px;
+    box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
+}
+
+.tech-stack-item > i {
+    font-size: 3rem;
+}
+
+.connect-content {
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 350px;
     margin-bottom: 30px;
 }
 
-.content ul {
-    list-style-type: none;  
-    margin: 0;
+.tech-stack-gallery {
+    height: 250px;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
-.about-card-subtitle {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+.tech-stack-gallery-item {
+    position: relative;
+    width: fit-content;
 }
 
-.about .content {
-    margin: 0px 15px;
-}
-
-.columns.is-centered.has-text-centered {
-    gap: 15px;
-}
-
-.column.is-one-third {
-    background-color: white;
+.tech-stack-gallery-item > i {
+    font-size: 1.8rem;
+    box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
     border-radius: 5px;
-    color: #333334;
-    padding: 25px 0px;
-    box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.2),0 0 0 1px rgba(10,10,10,.02);
+    padding: 5px;
+    border: 1px solid;
 }
 
-@media screen and (max-width: 768px) {
-    .column.is-one-third {
-        margin-bottom: 20px;
+@media screen and (max-width: 1150px) {
+    .tech-stack {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
     }
-    
 }
+
+
+@media screen and (max-width: 650px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        height: auto;
+    }
+}
+
+/* Skills icons styles */
+.devicon-github-original, .devicon-express-original, .devicon-wordpress-plain {
+    color: #575757 !important;
+}
+
+@media screen and (max-width: 490px) {
+    .tech-stack-gallery-item > i {
+        font-size: 1.845rem;
+    }
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    /* display: inline-block; */
+    /* border-bottom: 1px dotted black; */
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(180deg);
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
