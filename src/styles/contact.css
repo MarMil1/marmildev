@@ -1,26 +1,102 @@
 .contact {
-    background-color: #ef5f14;
-    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: relative; */
 }
 
-.contact-idea {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 40px;
+/* .contact::before {
+    background: url("../assets/contact_section.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.1;
+    position: absolute;
+    top: 95px;
+    right: 0px;
+    bottom: 0px;
+    left: 25px;
+    content: "";
+} */
+
+.contact-container-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
-.fa-linkedin, .fa-envelope {
-    color: white;
+.contact-container-form label {
+    color: var(--light-text);
 }
 
-.fa-linkedin:hover, .fa-envelope:hover {
-    color: #d3d3d3;
+.contact-container-form input, 
+.contact-container-form textarea  {
+    background-color: var(--input-color);
+    color: var(--light-text);
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
 }
 
-.contact-item {
-    margin-bottom: 40px;
+.contact-container-form input::placeholder, 
+.contact-container-form textarea::placeholder {
+    color: #787878;
 }
 
-.align-items {
-    align-items: center;
+.contact-container-form input:focus, 
+.contact-container-form textarea:focus {
+    border: none;
+    box-shadow: rgb(102 138 255) 0px 0px 3px;
+}
+
+.contact-container-side {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form-btn {
+    background-color: #D0803E;
+    border: none;
+    color: #f6f6f6;
+    font-weight: 600;
+}
+
+.contact-form-btn:hover {
+    color: #ffffff;
+    background-color: #CE7A34;
+}
+
+.contact-form-btn:focus {
+    color: #ffffff;
+}
+
+.contact-container-subheading {
+    text-align: left;
+    font-size: 1.15rem;
+}
+
+.contact-container-socials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.contact-container-socials i {
+    color: #ffffff;
+    background-color: #3e8ed0;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 650px) {
+    .contact-container-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contact::before {
+        top: 260px;
+        left: 0;
+    }
 }

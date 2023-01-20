@@ -1,72 +1,60 @@
-import React from 'react'
-import '../styles/about.css'
+import React from "react";
+import "../styles/about.css";
+import { otherToolsData } from "../data/otherToolsData";
+import { mainToolsData } from "../data/mainToolsData";
+import { Link } from "react-scroll";
 
 export const About = () => {
+  const end = new Date().getFullYear();
+  const start = new Date(process.env.REACT_APP_ORIGIN_DATE).getFullYear();
+  const originDate = end - start;
+
   return (
-    <section 
-            id="about" 
-            className="about section is-large is-white has-text-centered"
-    >
-        <div className="container is-narrow">
-          <div className="columns about-title-container is-mobile is-centered">
-            <div className="column is-three-fifths">
-              <div className="work-title">
-                Hello! I'm Marko.
-              </div>
-              <p className="subtitle is-size-5-desktop has-text-weight-normal">
-                I'm a full stack software developer.
-                Developing software is a passion of mine in which
-                I strive to provide the best solutions for projects I work on. 
-                Take a look at the languages, tools, software and databases that I've had 
-                experience with so far below.
-              </p>
-            </div>
-          </div>
-          {/* <div className="box"> */}
-            <div className="content">
-              <div className="columns is-centered has-text-centered">
-                <div className="column is-one-third">
-                  <div className="about-card-title">Languages</div>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Swift</li>
-                    <li>Ruby</li>
-                  </ul>
-                </div>
-                <div className="column is-one-third">
-                  <div className="about-card-title">Tools</div>
-                  <ul>
-                    <li>ReactJS</li>
-                    <li>NodeJS</li>
-                    <li>ExpressJS</li>
-                    <li>Ruby on Rails</li>
-                    <li>Bulma</li>
-                    <li>Bootstrap</li>
-                    <li>Angular</li>
-                    <li>VueJS</li>
-                  </ul>
-                </div>
-                <div className="column is-one-third">
-                  <div className="about-card-title">Software/DB</div>
-                  <ul>
-                    <li>Git</li>
-                    <li>Jira</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>Firebase</li>
-                    <li>PostgreSQL</li>
-                    <li>Oracle Developer</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          {/* </div> */}
+    <section id="about" className="about section has-text-centered">
+      <div className="about-text">
+        <div className="main-subheading">Hello! I'm Marko.</div>
+        <p className="about-bio-content">
+          I'm a full stack software developer with more than {originDate} years
+          of experience in programming. Developing software is a passion of mine
+          in which I seek to provide the best solutions possible for projects I
+          work on. I like working on challenging tasks and learning new
+          technologies that help me enrich my skill toolbox. Some of the
+          technologies I am familiar with are JavaScript, React, Redux, HTML,
+          CSS, and PostgreSQL. Enjoy my website and drop me a message if you'd
+          like to chat.
+        </p>
+        <div className="connect-content">
+          Would you like to connect and work together?
         </div>
+        <Link
+          className="contact-btn button is-info is-rounded"
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Let's Chat
+        </Link>
+      </div>
+      <div className="about-skills">
+        <div className="main-subheading">Tech & Skills</div>
+        <div className="tech-stack">
+          {mainToolsData.map((item, index) => (
+            <div key={index} className="tech-stack-item tooltip">
+              <span className="tooltiptext">{item.tooltip}</span>
+              <i className={`${item.name} colored`}></i>
+            </div>
+          ))}
+        </div>
+        <div id="ts-gallery" className="tech-stack-gallery">
+          {otherToolsData.map((item, index) => (
+            <div key={index} className="tech-stack-gallery-item tooltip">
+              <span className="tooltiptext">{item.tooltip}</span>
+              <i className={`${item.name} colored`}></i>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};

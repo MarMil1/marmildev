@@ -3,8 +3,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../assets/herobackground.png);
-    animation: 0.8s ease-in 0s 1 initialize;
+    animation: initialize 0.8s ease-in 0s 1;
+    -webkit-animation: initialize 0.8s ease-in 0s 1;
+    -moz-animation: initialize 0.8s ease-in 0s 1;
+    -ms-animation: initialize 0.8s ease-in 0s 1;
+    -o-animation: initialize 0.8s ease-in 0s 1;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#3e8ed0",GradientType=1);
 }
 
 @keyframes initialize {
@@ -17,20 +25,32 @@
 }
 
 .splash-logo {
-    transform: scale(3);
+    transform: scale(3) rotate(-90deg);
+}
+
+.splash-logo-dark {
+    transform: scale(3) rotate(90deg);
 }
 
 .splash-letter-one {
     transform-origin: 50% 50%;
     transform: rotate(0deg) translate(30px, 170px);
-    animation: 2s ease-out 0s 1 moveDown;
+    animation: moveDown 2s ease-out 0s 1;
+    -webkit-animation: moveDown 2s ease-out 0s 1;
+    -moz-animation: moveDown 2s ease-out 0s 1;
+    -ms-animation: moveDown 2s ease-out 0s 1;
+    -o-animation: moveDown 2s ease-out 0s 1;
     animation-play-state: running;
 }
 
 .splash-letter-two {
     transform-origin: 50% 50%;
     transform: rotate(180deg) translate(30px, 170px);
-    animation: 2s ease-out 0s 1 moveUp;
+    animation: moveUp 2s ease-out 0s 1;
+    -webkit-animation: moveUp 2s ease-out 0s 1;
+    -moz-animation: moveUp 2s ease-out 0s 1;
+    -ms-animation: moveUp 2s ease-out 0s 1;
+    -o-animation: moveUp 2s ease-out 0s 1;
 }
 
 @keyframes moveDown {

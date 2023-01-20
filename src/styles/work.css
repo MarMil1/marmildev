@@ -1,20 +1,77 @@
 .work {
-    border-top: 30px solid #ef5f14;
-    padding-top: 120px !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(208,128,62,0.1474964985994398) 0%, rgba(208,128,62,0.04665616246498594) 50%, rgba(208,128,62,0.15029761904761907) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(208,128,62,0.1474964985994398) 0%, rgba(208,128,62,0.04665616246498594) 50%, rgba(208,128,62,0.15029761904761907) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(208,128,62,0.1474964985994398) 0%, rgba(208,128,62,0.04665616246498594) 50%, rgba(208,128,62,0.15029761904761907) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#d0803e",GradientType=1);
 }
 
-.work-title {
+.work-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.main-subheading {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 6vw;
+    margin-bottom: 60px;
+    text-align: left;
 }
 
-@media screen and (max-width: 1023px) {
-    .work {
-        padding: 200px 20px;
+.work-header-content {
+    text-align: left;
+    font-size: 1.35rem;
+    margin-top: 10px;
+}
+
+.work-header-contact-btn {
+    width: 50%;
+    margin-top: 10px;
+    font-size: 1.5rem !important;
+    justify-self: center;
+}
+
+.work-logo {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
+}
+
+@media screen and (max-width: 1023px) {    
+    .main-subheading {
+        font-size: 2rem;
     }
-    
-    .work-title {
-        font-size: 1.75rem;
+}
+
+@media screen and (max-width: 990px) {
+    .work-header {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .work-header-contact-btn {
+        justify-self: left;
+        font-size: 1.2rem !important;
+        width: fit-content;
+    }
+
+    .work-subheading {
+        margin-bottom: 0px;
+        display: flex;
+        align-self: center;
+    }
+
+    .work-header-content {
+        margin-top: 0px;
     }
 }
