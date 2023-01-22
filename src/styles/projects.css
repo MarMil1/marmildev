@@ -1,15 +1,10 @@
-.projects {
-    background-color: var(--projects-background);
-    padding-top: 25vh;
-    padding-bottom: 25vh;
-}
-
 .featured-projects-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    align-items: start;
-    margin: 0 0 25vh 0;
+    align-items: center;
+    margin: 0 0 100px 0;
+    border-left: 3px solid #3f8ed0;
 }
 
 .hr-divider {
@@ -20,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 20px;
 }
 
 .featured-project-title {
@@ -99,7 +95,6 @@
 .featured-project-tools-item i {
     font-size: 1.2rem;
     border: 1px solid;
-    border-radius: 5px;
     padding: 5px;
 } 
 
@@ -108,6 +103,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 30px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 60px;
 }
 
 .second-subheading {
@@ -165,26 +162,24 @@
 
 .other-project-scroll-left {
     left: 2.3%;
-    height: 163px;
+    height: 168px;
     margin-top: 30px;
     position: absolute;
     background-color: var(--hr-color);
     z-index: 1;
     cursor: pointer;
-    border-radius: 7px;
     box-shadow: 5px 0px 10px 5px rgb(10 10 10 / 10%);
     border: 1px solid var(--border-color);
 }
 
 .other-project-scroll-right {
     right: 2.3%;
-    height: 163px;
+    height: 168px;
     margin-top: 30px;
     position: absolute;
     background-color: var(--hr-color);
     z-index: 1;
     cursor: pointer;
-    border-radius: 7px;
     box-shadow: -5px 0px 10px 5px rgb(10 10 10 / 10%);
     border: 1px solid var(--border-color);
 }
@@ -195,6 +190,21 @@
 
 @media screen and (max-width: 670px) {
     .other-project-scroll-left, .other-project-scroll-right {
-        height: 211px;
+        height: 240px;
     }
+}
+
+.projects-button {
+    padding: 10px;
+    border: none;
+    color: var(--light-text);
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.projects-button:hover {
+    background-color: var(--hover-button);
 }

@@ -87,3 +87,19 @@
     from {right: 30px; opacity: 1;}
     to {right: 0; opacity: 0;}
 }
+
+.contact-form-btn {
+    padding: 10px;
+    border: none;
+    color: var(--light-text);
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-form-btn:hover {
+    background-color: var(--hover-button);
+    color: var(--light-text);
+}

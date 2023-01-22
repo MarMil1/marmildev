@@ -21,16 +21,16 @@ export const Hero = () => {
       <div id="hero-body" className="hero-body">
         <div className="hero-main-title">Marko Milosavljevic</div>
         <div className="hero-main-body">
-          Full Stack Software Developer currently based in Chicago, Illinois.
+          Full Stack Software Developer based in Chicago, Illinois.
         </div>
         <Link
-          className="contact-btn button is-info is-rounded hero-btn"
+          className="contact-btn"
           to="contact"
           spy={true}
           smooth={true}
           duration={500}
         >
-          Contact
+          Let's Chat <i class="fa-solid fa-arrow-right fa-lg"></i>
         </Link>
       </div>
       <Link

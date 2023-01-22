@@ -12,7 +12,9 @@ export const About = () => {
   return (
     <section id="about" className="about section has-text-centered">
       <div className="about-text">
-        <div className="main-subheading">Hello! I'm Marko.</div>
+        <div className="main-subheading">
+          <i class="fa-solid fa-ellipsis-vertical"></i> HELLO! I'M MARKO.
+        </div>
         <p className="about-bio-content">
           I'm a full stack software developer with more than {originDate} years
           of experience in programming. Developing software is a passion of mine
@@ -27,17 +29,19 @@ export const About = () => {
           Would you like to connect and work together?
         </div>
         <Link
-          className="contact-btn button is-info is-rounded"
+          className="contact-btn"
           to="contact"
           spy={true}
           smooth={true}
           duration={500}
         >
-          Let's Chat
+          Let's Chat <i class="fa-solid fa-arrow-right fa-lg"></i>
         </Link>
       </div>
       <div className="about-skills">
-        <div className="main-subheading">Tech & Skills</div>
+        <div className="main-subheading">
+          <i class="fa-solid fa-ellipsis-vertical"></i> TECH & SKILLS
+        </div>
         <div className="tech-stack">
           {mainToolsData.map((item, index) => (
             <div key={index} className="tech-stack-item tooltip">

@@ -3,7 +3,7 @@ import "../styles/toggleTheme.css";
 import { setTheme } from "../helpers/themes";
 
 export const ToggleTheme = () => {
-  const [toggleClass, setToggleClass] = useState("dark");
+  const [toggleClass, setToggleClass] = useState("light");
   let theme = localStorage.getItem("theme");
 
   const handleOnClick = () => {
@@ -34,7 +34,6 @@ export const ToggleTheme = () => {
           viewBox="0 0 300 300"
           preserveAspectRatio="xMidYMid meet"
           onClick={handleOnClick}
-          style={{ transform: "rotate(90deg)" }}
         >
           <path
             className="logo-letter-one"

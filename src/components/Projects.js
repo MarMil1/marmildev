@@ -76,7 +76,9 @@ export const Projects = () => {
   return (
     <section id="projects" className="projects section is-white">
       <div className="" style={{ display: "flex", gap: "10%" }}>
-        <div className="main-subheading">Projects</div>
+        <div className="main-subheading">
+          <i class="fa-solid fa-ellipsis-vertical"></i> PROJECTS
+        </div>
       </div>
       {featuredProjectsData.map((item, index) => (
         <div key={index}>
@@ -97,15 +99,11 @@ export const Projects = () => {
               </div>
               <div className="featured-project-links">
                 <a href={item.sourceURL} target="blank">
-                  <button className="button is-rounded project-links-button">
-                    Repo
-                  </button>
+                  <button className="projects-button">Repo</button>
                 </a>
                 {item.siteURL && (
                   <a href={item.siteURL} target="blank">
-                    <button className="button is-rounded project-links-button">
-                      Website
-                    </button>
+                    <button className="projects-button">Website</button>
                   </a>
                 )}
               </div>

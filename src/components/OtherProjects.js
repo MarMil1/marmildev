@@ -32,15 +32,11 @@ export const OtherProjects = (props) => {
         </div>
         <div className="other-single-project-links">
           <a href={props.sourceURL} target="blank">
-            <div className="button is-rounded other-single-project-links-button">
-              Repo
-            </div>
+            <div className="other-projects-button">Repo</div>
           </a>
           {props.siteURL && (
             <a href={props.siteURL} target="blank">
-              <div className="button is-rounded other-single-project-links-button">
-                Website
-              </div>
+              <div className="other-projects-button">Website</div>
             </a>
           )}
         </div>

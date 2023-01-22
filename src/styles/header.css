@@ -4,16 +4,11 @@
     -moz-animation: afterSplashFadeIn 0.5s ease-in 0s 1;
     -ms-animation: afterSplashFadeIn 0.5s ease-in 0s 1;
     -o-animation:afterSplashFadeIn 0.5s ease-in 0s 1;
-    padding: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
     background-color: inherit;
     border-top: 4px solid #3f8ed0;
-
-    background: rgb(2,0,36);
-    background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0) 0%, rgba(62,142,208,0.24833683473389356) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0) 0%, rgba(62,142,208,0.24833683473389356) 100%);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0) 0%, rgba(62,142,208,0.24833683473389356) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#3e8ed0",GradientType=1);
 }
+
 
 .navbar-brand {
     align-items: center;
@@ -43,12 +38,24 @@ a.navbar-item:hover {
     color: #3E8ED0;
 }
 
+.navbar-item * {
+  padding: 10px;
+}
+
+.navbar-item *:hover {
+  background-color: var(--hover-button);
+}
+
 .contact-btn {
     margin-right: 15px;
 }
 
 .navbar-menu.is-active {
     background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-menu.is-shadowless.has-text-centered {
+  font-weight: 500;
 }
 
 .navbar-end .navbar-item .active {
@@ -77,34 +84,6 @@ a.navbar-item:hover {
     transform-origin: 50% 50%;
   }
 
-  .rotate-whole-logo:hover {
-    animation: rotateWholeLogo 2s linear infinite;
-    -webkit-animation: rotateWholeLogo 2s linear infinite;
-    -moz-animation: rotateWholeLogo 2s linear infinite;
-    -ms-animation: rotateWholeLogo 2s linear infinite;
-    -o-animation: rotateWholeLogo 2s linear infinite;
-  }
-
-  @keyframes rotateWholeLogo {
-    0% {
-        transform: rotate(0deg) scale(0.9);
-    }
-
-    100% {
-        transform: rotate(360deg) scale(0.9);
-    }
-  }
-
-  @-webkit-keyframes rotateWholeLogo {
-    0% {
-        transform: rotate(0deg) scale(0.9);
-    }
-
-    100% {
-        transform: rotate(630deg) scale(0.9);
-    }
-  }
-
   .logo-line {
     stroke: #868482; 
     stroke-width: 7; 
@@ -113,26 +92,33 @@ a.navbar-item:hover {
   }
 
   .go-to-top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 135px;
+    color: var(--light-text);
+    background-color: var(--hover-button);
     visibility: hidden;
     opacity: 1;
-    transition: all 600ms linear;
+    transition: opacity 600ms linear;
   }
 
   .go-to-top-btn i {
-    font-size: 2rem;
-    padding: 6px 8px;
-    border-radius: 50%;
-    background-color: #3e8ed0;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 2;
-    cursor: pointer;
-    color: var(--button-text);
+    font-size: 1.5rem;
+    color: var(--light-text);
   }
   
-  .go-to-top-btn i:hover {
-    color: lightgray;
+  .go-to-top-btn:hover {
+    background-color: var(--hover-button);
   }
 
   .go-to-top-btn-hidden {
