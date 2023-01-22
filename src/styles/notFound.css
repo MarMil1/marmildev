@@ -23,22 +23,29 @@
     margin-bottom: 50px;
 }
 
-.button.is-info.is-rounded.go-back-error {
-    font-size: 1.2rem;
-    font-weight: 600;
+.button.go-back-error {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--light-text);
+    background-color: inherit;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.not-found-container::before {
-    background: url("../assets/page_not_found.svg") no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-attachment: fixed;
-    opacity: 0.1;
-    position: absolute;
-    top: -20px;
-    right: 0px;
-    bottom: 0px;
-    left: 25px;
-    content: "";
-  }
-  
+.button.go-back-error:hover {
+    color: var(--light-text);
+    background-color: var(--hover-button);
+}
+
+.button.go-back-error:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.button.go-back-error i {
+    color: #3E8ED0;
+    margin-right: 10px;
+}
+
+

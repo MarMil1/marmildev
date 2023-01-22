@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Work } from "./components/Work";
 import { Projects } from "./components/Projects";
 import { Hero } from "./components/Hero";
@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <HashRouter>
+    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
       <Routes>
         <Route
           path="/"
@@ -45,7 +45,7 @@ function App() {
         ></Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
