@@ -1,23 +1,9 @@
 .contact {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* position: relative; */
 }
 
-/* .contact::before {
-    background: url("../assets/contact_section.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-    opacity: 0.1;
-    position: absolute;
-    top: 95px;
-    right: 0px;
-    bottom: 0px;
-    left: 25px;
-    content: "";
-} */
 
 .contact-container-content {
     display: grid;
@@ -35,6 +21,7 @@
     color: var(--light-text);
     font-size: 1rem;
     border: 1px solid var(--border-color);
+    border-radius: 0px;
 }
 
 .contact-container-form input::placeholder, 

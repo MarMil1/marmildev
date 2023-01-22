@@ -1,15 +1,7 @@
 .work {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: rgb(2,0,36);
-    background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(208,128,62,0.1474964985994398) 0%, rgba(208,128,62,0.04665616246498594) 50%, rgba(208,128,62,0.15029761904761907) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(208,128,62,0.1474964985994398) 0%, rgba(208,128,62,0.04665616246498594) 50%, rgba(208,128,62,0.15029761904761907) 100%);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(208,128,62,0.1474964985994398) 0%, rgba(208,128,62,0.04665616246498594) 50%, rgba(208,128,62,0.15029761904761907) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#d0803e",GradientType=1);
 }
 
 .work-header {
@@ -24,6 +16,17 @@
     font-weight: 600;
     margin-bottom: 60px;
     text-align: left;
+}
+
+.main-subheading i {
+    font-size: 2.3rem;
+    color: #d0803e;
+    margin-top: 12px;
+}
+
+.main-subheading.work-subheading div {
+    font-size: 2.5rem;
+    padding-left: 10px;
 }
 
 .work-header-content {
@@ -42,14 +45,19 @@
 .work-logo {
     background-color: #ffffff;
     padding: 10px 20px;
-    border-radius: 20px;
     box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
 }
 
 @media screen and (max-width: 1023px) {    
-    .main-subheading {
+    .main-subheading, .main-subheading.work-subheading div {
         font-size: 2rem;
     }
+
+    .main-subheading i {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+    
 }
 
 @media screen and (max-width: 990px) {
@@ -57,6 +65,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         gap: 10px;
+        justify-items: start;
     }
 
     .work-header-contact-btn {

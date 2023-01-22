@@ -127,7 +127,6 @@ export const Header = () => {
             </div>
             <div className="navbar-item">
               <Link
-                // className="contact-btn button is-info is-rounded"
                 className="active"
                 to="contact"
                 spy={true}
@@ -140,16 +139,10 @@ export const Header = () => {
           </div>
         </div>
       </nav>
-      <Link
-        activeClass=""
-        to="navbar"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
+      <Link to="navbar" spy={true} smooth={true} offset={-70} duration={500}>
         <div id="go-to-top-btn" className="go-to-top-btn">
           <i className="fa fa-2x fa-angle-up"></i>
+          Scroll To Top
         </div>
       </Link>
     </header>

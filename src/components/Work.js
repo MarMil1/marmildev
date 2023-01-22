@@ -9,22 +9,28 @@ export const Work = () => {
       className="work section has-text-centered has-border-top"
     >
       <div className="work-header">
-        <div className="main-subheading work-subheading">
-          Companies I've worked with
+        <div
+          className="main-subheading work-subheading"
+          style={{ display: "flex" }}
+        >
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div>COMPANIES I'VE WORKED WITH</div>
         </div>
         <div className="work-header-content">
           Companies I genuinely appreciate for placing their trust in me with
           their projects. Interested in learning more?
         </div>
-        <Link
-          className="contact-btn button is-info is-rounded work-header-contact-btn"
-          to="contact"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Let's Chat
-        </Link>
+        <div>
+          <Link
+            className="contact-btn"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Let's Chat <i class="fa-solid fa-arrow-right fa-lg"></i>
+          </Link>
+        </div>
       </div>
       <div className="work-grid">
         <div className="columns is-multiline is-mobile">

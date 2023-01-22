@@ -32,7 +32,6 @@ ul {
   background-position: center !important;
   background-size: contain !important;
   height: 300px;
-  border-radius: 15px;
 
   @media (max-width: 991px) {
     padding-right: 60px;
@@ -152,4 +151,10 @@ ul {
   padding: 1px 3px;
   border-radius: 5px;
   color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel__slides {
+    padding-left: 20px;
+  }
 }

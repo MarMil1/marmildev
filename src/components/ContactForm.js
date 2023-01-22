@@ -149,11 +149,7 @@ export const ContactForm = () => {
 
       <div className="field is-grouped">
         <div className="control">
-          <button
-            className="button is-rounded contact-form-btn"
-            type="submit"
-            value="Send"
-          >
+          <button className="contact-form-btn" type="submit" value="Send">
             Send
           </button>
         </div>

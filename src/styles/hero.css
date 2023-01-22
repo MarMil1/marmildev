@@ -1,11 +1,6 @@
 .hero {
-  height: 90vh;
-  background: rgb(2,0,36);
-  background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(62,142,208,0.24833683473389356) 0%, rgba(62,142,208,0.04665616246498594) 50%, rgba(62,142,208,0.24833683473389356) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#3e8ed0",GradientType=1);
   position: relative;
+  height: 100vh;
 }
 
 .hero-body {
@@ -14,20 +9,6 @@
   align-items: center;
   flex-direction: column;
   margin-top: -300px;
-}
-
-.hero::before {
-  background: url("../assets/developer_activity.svg") no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-attachment: fixed;
-  opacity: 0.1;
-  position: absolute;
-  top: -20px;
-  right: 0px;
-  bottom: 0px;
-  left: 25px;
-  content: "";
 }
 
 .hero-main-title {
@@ -43,10 +24,21 @@
   padding-bottom: 60px;
 }
 
-.contact-btn.button.is-info.is-rounded.hero-btn {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ffffff;
+.contact-btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--light-text);
+  padding: 10px;
+}
+
+.contact-btn i {
+  color: #3f8ed0;
+  margin-left: 5px;
+}
+
+.contact-btn:hover {
+  color: var(--light-text);
+  background-color: var(--hover-button);
 }
 
 .arrow-to-content {
