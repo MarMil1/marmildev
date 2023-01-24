@@ -144,8 +144,10 @@ export const Projects = () => {
           <OtherProjects
             key={index}
             name={item.name}
+            type={item.type}
             description={item.description}
             tools={item.tools}
+            image={item.image}
             siteURL={item.siteURL}
             sourceURL={item.sourceURL}
           />

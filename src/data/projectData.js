@@ -1,6 +1,16 @@
+import stackOverflow from "../assets/stack-overflow-ide-1.webp";
+import bmmnViz from "../assets/bmmn-viz-1.webp";
+import bizCards from "../assets/bizCards-1.webp";
+import msGen from "../assets/msGen-1.webp";
+import apisMicro from "../assets/apisMicro-1.webp";
+import codepen from "../assets/codepen-1.webp";
+import healthTracker from "../assets/health-tracker-1.webp";
+import stockWatch from "../assets/stock-watch-1.webp";
+
 export const projectData = [
   {
     name: "Stack Overflow IDE",
+    type: "desktop",
     description: "Stack Overflow extension for VS Code IDE.",
     tools: [
       {
@@ -20,27 +30,31 @@ export const projectData = [
         tooltip: "JavaScript",
       },
     ],
+    image: stackOverflow,
     siteURL: "",
     sourceURL: "https://github.com/MarMil1/foundation",
   },
   {
-    name: "Stock Watch",
-    description: "Daily stock prices tracker for Android.",
+    name: "Health Tracker",
+    type: "mobile",
+    description: "Personal nutrition & fitness tracker for iOS.",
     tools: [
       {
-        name: "devicon-java-plain",
-        tooltip: "Java",
+        name: "devicon-swift-plain",
+        tooltip: "Swift",
       },
       {
-        name: "devicon-androidstudio-plain",
-        tooltip: "Android Studio",
+        name: "devicon-xcode-plain",
+        tooltip: "Xcode",
       },
     ],
+    image: healthTracker,
     siteURL: "",
-    sourceURL: "https://github.com/MarMil1/stockWatch",
+    sourceURL: "https://github.com/MarMil1/ios-health-tracker",
   },
   {
     name: "BMMNViz",
+    type: "desktop",
     description: "Graph visualizations of K-12 enrollment dataset.",
     tools: [
       {
@@ -64,27 +78,31 @@ export const projectData = [
         tooltip: "JavaScript",
       },
     ],
+    image: bmmnViz,
     siteURL: "",
     sourceURL: "https://github.com/MarMil1/CSC468",
   },
   {
-    name: "Health Tracker",
-    description: "Personal nutrition & fitness tracker for iOS.",
+    name: "Stock Watch",
+    type: "mobile",
+    description: "Daily stock prices tracker for Android.",
     tools: [
       {
-        name: "devicon-swift-plain",
-        tooltip: "Swift",
+        name: "devicon-java-plain",
+        tooltip: "Java",
       },
       {
-        name: "devicon-xcode-plain",
-        tooltip: "Xcode",
+        name: "devicon-androidstudio-plain",
+        tooltip: "Android Studio",
       },
     ],
+    image: stockWatch,
     siteURL: "",
-    sourceURL: "https://github.com/MarMil1/ios-health-tracker",
+    sourceURL: "https://github.com/MarMil1/stockWatch",
   },
   {
     name: "Biz Cards",
+    type: "desktop",
     description: "Business card collecting/scanning tool.",
     tools: [
       {
@@ -108,11 +126,13 @@ export const projectData = [
         tooltip: "Google Firebase",
       },
     ],
+    image: bizCards,
     siteURL: "https://business-card-app-be379.firebaseapp.com/login",
     sourceURL: "https://github.com/MarMil1/CSC436-business-card-app",
   },
   {
     name: "msGen",
+    type: "desktop",
     description: "Random message generator game.",
     tools: [
       {
@@ -132,11 +152,13 @@ export const projectData = [
         tooltip: "GitHub Pages",
       },
     ],
+    image: msGen,
     siteURL: "https://marmil1.github.io/msgen/",
     sourceURL: "https://github.com/MarMil1/msgen",
   },
   {
     name: "ApisMicro",
+    type: "desktop",
     description: "Set of short APIs/microservices apps.",
     tools: [
       {
@@ -152,11 +174,13 @@ export const projectData = [
         tooltip: "Git",
       },
     ],
+    image: apisMicro,
     siteURL: "https://boilerplate-project-exercisetracker.marmil1.repl.co/",
     sourceURL: "https://github.com/MarMil1/apis-and-microservices",
   },
   {
     name: "Codepen",
+    type: "desktop",
     description: "Mini projects and apps on Codepen.",
     tools: [
       {
@@ -176,6 +200,7 @@ export const projectData = [
         tooltip: "JavaScript",
       },
     ],
+    image: codepen,
     siteURL: "",
     sourceURL: "https://codepen.io/marmil1",
   },
