@@ -39,15 +39,16 @@ a.navbar-item:hover {
 }
 
 .navbar-item * {
-  padding: 10px;
+    padding: 10px;
+    color: #3e8ed0;
+    border-radius: 10px;
+    transition: all 300ms ease-in;
 }
 
 .navbar-item *:hover {
-  background-color: var(--hover-button);
-}
-
-.contact-btn {
-    margin-right: 15px;
+    background-color: #3f8ed0;
+    color: #ffffff;
+    transition: all 300ms ease-in;
 }
 
 .navbar-menu.is-active {
@@ -55,11 +56,7 @@ a.navbar-item:hover {
 }
 
 .navbar-menu.is-shadowless.has-text-centered {
-  font-weight: 500;
-}
-
-.navbar-end .navbar-item .active {
-  color: #3e8ed0;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 1023px) {
@@ -110,6 +107,7 @@ a.navbar-item:hover {
     visibility: hidden;
     opacity: 1;
     transition: opacity 600ms linear;
+    border-radius: 10px 10px 0px 0px;
   }
 
   .go-to-top-btn i {
@@ -118,11 +116,11 @@ a.navbar-item:hover {
   }
   
   .go-to-top-btn:hover {
-    background-color: var(--hover-button);
+    background-color: var(--scroll-top-shadow);
   }
 
   .go-to-top-btn-hidden {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s 600ms, opacity 600ms linear;
+    transition: visibility 0s 400ms, opacity 400ms linear;
   }

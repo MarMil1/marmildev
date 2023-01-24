@@ -27,6 +27,7 @@
 .featured-project-desc {
     text-align: left;
     margin-bottom: 20px;
+    color: var(--subtext-color);
 }
 
 .featured-project-links {
@@ -96,6 +97,7 @@
     font-size: 1.2rem;
     border: 1px solid;
     padding: 5px;
+    border-radius: 10px;
 } 
 
 .more-projects-heading {
@@ -116,6 +118,7 @@
 
 .more-projects-header-content {
     margin-top: 5px;
+    color: var(--subtext-color);
 }
 
 .more-projects-header-button {
@@ -151,7 +154,9 @@
     scroll-behavior: smooth;
     white-space: nowrap;
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
+    height: 335px;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -163,25 +168,27 @@
 .other-project-scroll-left {
     left: 2.3%;
     height: 168px;
-    margin-top: 30px;
+    margin-top: 15px;
     position: absolute;
     background-color: var(--hr-color);
     z-index: 1;
     cursor: pointer;
     box-shadow: 5px 0px 10px 5px rgb(10 10 10 / 10%);
     border: 1px solid var(--border-color);
+    border-radius: 10px;
 }
 
 .other-project-scroll-right {
     right: 2.3%;
     height: 168px;
-    margin-top: 30px;
+    margin-top: 15px;
     position: absolute;
     background-color: var(--hr-color);
     z-index: 1;
     cursor: pointer;
     box-shadow: -5px 0px 10px 5px rgb(10 10 10 / 10%);
     border: 1px solid var(--border-color);
+    border-radius: 10px;
 }
 
 .other-project-scroll-left:focus, .other-project-scroll-right:focus {
@@ -190,21 +197,26 @@
 
 @media screen and (max-width: 670px) {
     .other-project-scroll-left, .other-project-scroll-right {
-        height: 240px;
+        height: 208px;
+        margin-top: 0;
     }
 }
 
 .projects-button {
     padding: 10px;
     border: none;
+    border-radius: 10px;
     color: var(--light-text);
     background-color: inherit;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 500;
     font-family: 'Poppins', sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 300ms ease-in;
 }
 
 .projects-button:hover {
-    background-color: var(--hover-button);
+    background-color: #3f8ed0;
+    color: #ffffff;
+    transition: all 300ms ease-in;
 }

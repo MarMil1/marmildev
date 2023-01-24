@@ -33,6 +33,7 @@
     text-align: left;
     font-size: 1.35rem;
     margin-top: 10px;
+    color: var(--subtext-color);
 }
 
 .work-header-contact-btn {
@@ -46,6 +47,7 @@
     background-color: #ffffff;
     padding: 10px 20px;
     box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 1023px) {    

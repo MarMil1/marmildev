@@ -1,7 +1,7 @@
 .theme-dark {
   --dark-text: #6d6d6d;
   --light-text: #e5e5e5;
-  --dark-background: #171717;
+  --dark-background: #21252b;
   --button-text: #e5e5e5;
   --hr-color: #333333;
   --gh-icon-color: #ffffff;
@@ -13,6 +13,8 @@
   --projects-background: #10101091;
   --scroll-top-shadow: #464646;
   --hover-button: #2f2f2f;
+  --subtext-color: #b7cada;
+  --other-projects-blur: #21252bc7;
 }
 
 .theme-light {
@@ -30,6 +32,8 @@
   --projects-background: #f9fafb;
   --scroll-top-shadow: #cecece;
   --hover-button: #f2f0f0;
+  --subtext-color: #415565;
+  --other-projects-blur: #fcfcfccf;
 }
 
 * {

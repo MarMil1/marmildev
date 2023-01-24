@@ -32,6 +32,9 @@ ul {
   background-position: center !important;
   background-size: contain !important;
   height: 300px;
+  border: 1px solid var(--border-color);
+  border-radius: 0 0 10px 10px;
+
 
   @media (max-width: 991px) {
     padding-right: 60px;
@@ -43,6 +46,21 @@ ul {
     align-items: flex-end;
     justify-content: center;
   }
+}
+
+.carousel__slides__browser {
+  height: 30px;
+  width: 100%;
+  background-color: var(--project-card);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 // Content of slides
@@ -143,7 +161,7 @@ ul {
 
 .carousel-slide-gif-tag {
   position: absolute;
-  top: 10px;
+  top: 35px;
   right: 10px;
   font-size: 10px;
   font-weight: 700;

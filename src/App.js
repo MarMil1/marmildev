@@ -19,7 +19,7 @@ function App() {
     keepTheme();
     setInterval(() => {
       setIsSplashScreen(true);
-    }, 2300);
+    }, 300);
   }, []);
 
   return (
