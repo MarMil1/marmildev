@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0f38e41.css",
-    "main.js": "/static/js/main.4d100ffa.js",
+    "main.css": "/static/css/main.8ce989da.css",
+    "main.js": "/static/js/main.04633510.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/reddit-client-5.gif": "/static/media/reddit-client-5.6f03fc4adf3c8a3169d2.gif",
     "static/media/marmil-blog-5.gif": "/static/media/marmil-blog-5.91af7eddbcc455a20cfc.gif",
@@ -18,17 +18,25 @@
     "static/media/amh.svg": "/static/media/amh.237d5d4bf87b8146093040376d1fa1cb.svg",
     "static/media/reddit-client-4.webp": "/static/media/reddit-client-4.4241ca8ba60d875d3565.webp",
     "static/media/reddit-client-3.webp": "/static/media/reddit-client-3.e4e5e52866f9f535f392.webp",
+    "static/media/codepen-1.webp": "/static/media/codepen-1.ec3c3cb587afddd2ec51.webp",
     "static/media/rnd.svg": "/static/media/rnd.81c8047dc59da4190df47f6fd23ac540.svg",
     "static/media/marmil-blog-3.webp": "/static/media/marmil-blog-3.3f45f5424de723c4c2bd.webp",
+    "static/media/stack-overflow-ide-1.webp": "/static/media/stack-overflow-ide-1.9223d2945759f10c59c8.webp",
+    "static/media/bizCards-1.webp": "/static/media/bizCards-1.5f9f9cc2e93f8afdb2b3.webp",
+    "static/media/bmmn-viz-1.webp": "/static/media/bmmn-viz-1.0d08e9276d2a2268ca9e.webp",
+    "static/media/apisMicro-1.webp": "/static/media/apisMicro-1.73a08161d536745bb5d2.webp",
+    "static/media/msGen-1.webp": "/static/media/msGen-1.8edc0a496ff3b85748b8.webp",
     "static/media/proseeder.svg": "/static/media/proseeder.1076fe20c532ef401d6edcb92154c086.svg",
+    "static/media/health-tracker-1.webp": "/static/media/health-tracker-1.9f9a8c5a941e04c69144.webp",
+    "static/media/stock-watch-1.webp": "/static/media/stock-watch-1.d00a6ffe431ce764d863.webp",
     "static/media/sphere.svg": "/static/media/sphere.8cb44d81b9a34f62348c7bbfd046bd92.svg",
     "index.html": "/index.html",
-    "main.a0f38e41.css.map": "/static/css/main.a0f38e41.css.map",
-    "main.4d100ffa.js.map": "/static/js/main.4d100ffa.js.map",
+    "main.8ce989da.css.map": "/static/css/main.8ce989da.css.map",
+    "main.04633510.js.map": "/static/js/main.04633510.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0f38e41.css",
-    "static/js/main.4d100ffa.js"
+    "static/css/main.8ce989da.css",
+    "static/js/main.04633510.js"
   ]
 }
