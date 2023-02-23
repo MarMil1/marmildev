@@ -43,11 +43,6 @@ export const ProjectSlideshow = (props) => {
       <CarouselLeftArrow onClick={(e) => goToPrevSlide(e)} />
 
       <ul className="carousel__slides">
-        <div className="carousel__slides__browser">
-          <i class="fa-solid fa-ellipsis fa-xl"></i>
-          <div className="computer-header-url-box"></div>
-          <div className="computer-header-avatar"></div>
-        </div>
         {Object.values(props.media).map((slide, index) => (
           <CarouselSlide
             key={index}

@@ -173,8 +173,8 @@
     background-color: var(--hr-color);
     z-index: 1;
     cursor: pointer;
-    box-shadow: 5px 0px 10px 5px rgb(10 10 10 / 10%);
-    border: 1px solid var(--border-color);
+    box-shadow: rgb(102 138 255) 0px 0px 3px;
+    border: none;
     border-radius: 10px;
 }
 
@@ -186,13 +186,9 @@
     background-color: var(--hr-color);
     z-index: 1;
     cursor: pointer;
-    box-shadow: -5px 0px 10px 5px rgb(10 10 10 / 10%);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-}
-
-.other-project-scroll-left:focus, .other-project-scroll-right:focus {
     box-shadow: rgb(102 138 255) 0px 0px 3px;
+    border: none;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 670px) {
