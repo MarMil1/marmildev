@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ce989da.css",
-    "main.js": "/static/js/main.04633510.js",
+    "main.css": "/static/css/main.02951ae0.css",
+    "main.js": "/static/js/main.229d2731.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/reddit-client-5.gif": "/static/media/reddit-client-5.6f03fc4adf3c8a3169d2.gif",
     "static/media/marmil-blog-5.gif": "/static/media/marmil-blog-5.91af7eddbcc455a20cfc.gif",
@@ -31,12 +31,12 @@
     "static/media/stock-watch-1.webp": "/static/media/stock-watch-1.d00a6ffe431ce764d863.webp",
     "static/media/sphere.svg": "/static/media/sphere.8cb44d81b9a34f62348c7bbfd046bd92.svg",
     "index.html": "/index.html",
-    "main.8ce989da.css.map": "/static/css/main.8ce989da.css.map",
-    "main.04633510.js.map": "/static/js/main.04633510.js.map",
+    "main.02951ae0.css.map": "/static/css/main.02951ae0.css.map",
+    "main.229d2731.js.map": "/static/js/main.229d2731.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ce989da.css",
-    "static/js/main.04633510.js"
+    "static/css/main.02951ae0.css",
+    "static/js/main.229d2731.js"
   ]
 }
