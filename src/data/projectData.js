@@ -159,7 +159,7 @@ export const projectData = [
   {
     name: "ApisMicro",
     type: "desktop",
-    description: "Set of short APIs/microservices apps.",
+    description: "A set of short APIs/microservices apps.",
     tools: [
       {
         name: "devicon-express-original",

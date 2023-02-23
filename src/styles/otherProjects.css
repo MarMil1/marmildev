@@ -5,65 +5,12 @@
 .other-single-project-computer {
     width: 449px;
     height: 320px;
-    border: 1px solid var(--border-color);
     border-radius: 10px;
-    background-color: var(--project-card);
 }
 
 .other-single-project-mobile {
     width: 150px;
     height: 319px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    background-color: var(--project-card);
-}
-
-.other-single-project-mobile-header {
-    height: 20px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.mobile-header-camera {
-    background-color: gray;
-    height: 8px;
-    width: 8px;
-    border-radius: 5px;
-}
-
-.mobile-header-speaker {
-    background-color: gray;
-    height: 8px;
-    width: 50px;
-    border-radius: 5px;
-}
-
-.other-single-project-computer-header {
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-evenly;
-    height:30px;
-}
-
-.other-single-project-computer-header i {
-    color: gray;
-}
-
-.computer-header-url-box {
-    background-color: gray;
-    width: 70%;
-    height: 12px;
-    border-radius: 10px;
-}
-
-.computer-header-avatar {
-    background-color: gray;
-    padding: 6px 6px;
-    border-radius: 10px;
 }
 
 .other-single-project-computer-footer {
@@ -71,8 +18,8 @@
 }
 
 .other-single-project-computer-footer img {
-    height: 288px;
-    border-radius: 0px 0px 10px 10px;
+    height: 298px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .other-single-project-computer-footer-content {
@@ -124,7 +71,7 @@
 }
 
 .other-single-project-mobile-body img {
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .project-desktop-body-name, .project-mobile-body-name {
