@@ -92,8 +92,8 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
-    color: var(--light-text);
-    background-color: inherit;
+    color: #FFFFFF;
+    background-color: #3f8ed0;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 500;
@@ -102,7 +102,154 @@
 }
 
 .contact-form-btn:hover {
-    background-color: #3f8ed0;
+    background-color: #3a82bd;
     color: #ffffff;
     transition: all 300ms ease-in;
 }
+/* Bot Test START */
+.bot-test-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.check-container {
+    display: flex;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 15px;
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-color);
+    cursor: pointer;
+}
+
+.check-container:hover input ~ .checkmark {
+    border-color: #b5b5b5;
+}
+
+.check-container input:checked ~ .checkmark {
+    background-color: var(--input-color);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check-container .checkmark:after {
+    left: 9px;
+    top: 3px;
+    width: 11px;
+    height: 18px;
+    border: solid rgb(55, 197, 55);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check-label {
+    margin-left: 40px;
+    transform: translate(0px, 3px);
+}
+
+.checked-test-container {
+    background-color:var(--input-color);
+    padding: 11px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    opacity: 1;
+    max-width: 250px;
+}
+
+.test-visible {
+    display: block;
+    visibility: visible;
+    transition: opacity 1s ease-in-out;
+    animation: fadeInTestBox 500ms ease-in-out 0s 1;
+}
+
+@keyframes fadeInTestBox {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.test-invisible {
+    display: none;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+    animation: fadeOutTestBox 500ms ease-in-out 0s 1;
+}
+
+.solution-heading {
+    font-size: 16px;
+    padding-left: 3px;
+}
+
+.task-to-solve {
+    background-color: #efeeee;
+    color: #333;
+    border-radius: 10px;
+    padding: 7px 11px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.solution-input {
+    border-radius: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 11px;
+    margin-top: 10px
+}
+
+.solution-input::-webkit-outer-spin-button,
+.solution-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.solution-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.solution-input:focus {
+    outline: none;
+}
+
+.btn-disabled, .btn-disabled:hover {
+    background-color: #83c7ff;
+    cursor: not-allowed;
+}
+
+
+/* Bot Test END */

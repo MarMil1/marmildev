@@ -13,7 +13,7 @@ export const NotFound = () => {
       </div>
       <div className="error-text-two">Sorry for the inconvenience.</div>
       <button className="button go-back-error" onClick={() => navigate(-1)}>
-        <i class="fa-solid fa-arrow-left fa-lg"></i> Go Back
+        <i className="fa-solid fa-arrow-left fa-lg"></i> Go Back
       </button>
     </div>
   );
