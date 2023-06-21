@@ -14,8 +14,10 @@ export const ContactForm = () => {
   const [greenCheckmark, setGreenCheckmark] = useState(false);
   const [testOpen, setTestOpen] = useState(false);
   const [userResponse, setUserResponse] = useState("");
-  const [firstNum, setFirstNum] = useState(Math.floor(Math.random() * 10));
-  const [secondNum, setSecondNum] = useState(Math.floor(Math.random() * 10));
+  const [firstNum, setFirstNum] = useState(Math.floor(Math.random() * 10) + 1);
+  const [secondNum, setSecondNum] = useState(
+    Math.floor(Math.random() * 10) + 1
+  );
 
   useEffect(() => {
     const finalRes = () => {
@@ -61,8 +63,8 @@ export const ContactForm = () => {
           setTestOpen(false);
           setGreenCheckmark(false);
           setUserResponse("");
-          setFirstNum(Math.floor(Math.random() * 10));
-          setSecondNum(Math.floor(Math.random() * 10));
+          setFirstNum(Math.floor(Math.random() * 10) + 1);
+          setSecondNum(Math.floor(Math.random() * 10) + 1);
           snackbarSuccess();
           console.log(result.text);
         },
@@ -120,6 +122,11 @@ export const ContactForm = () => {
       "show",
       ""
     );
+  };
+
+  const resetTest = () => {
+    setFirstNum(Math.floor(Math.random() * 10) + 1);
+    setSecondNum(Math.floor(Math.random() * 10) + 1);
   };
 
   return (
@@ -196,9 +203,15 @@ export const ContactForm = () => {
             testOpen ? `test-visible` : `test-invisible`
           }`}
         >
-          <div className="task-to-solve">
-            {firstNum} + {secondNum}
+          <div className="task-controls-container">
+            <div className="task-to-solve">
+              {firstNum} + {secondNum}
+            </div>
+            <div className="reset-test" onClick={resetTest}>
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
           </div>
+
           <div className="solution-heading">Enter the solution below</div>
           <div>
             <input
