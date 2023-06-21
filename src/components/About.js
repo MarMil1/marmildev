@@ -13,7 +13,7 @@ export const About = () => {
     <section id="about" className="about section has-text-centered">
       <div className="about-text">
         <div className="main-subheading">
-          <i class="fa-solid fa-ellipsis-vertical"></i> HELLO! I'M MARKO.
+          <i className="fa-solid fa-ellipsis-vertical"></i> HELLO! I'M MARKO.
         </div>
         <p className="about-bio-content">
           I'm a full stack software developer with more than {originDate} years
@@ -35,12 +35,12 @@ export const About = () => {
           smooth={true}
           duration={500}
         >
-          Let's Chat <i class="fa-solid fa-arrow-right fa-lg"></i>
+          Let's Chat <i className="fa-solid fa-arrow-right fa-lg"></i>
         </Link>
       </div>
       <div className="about-skills">
         <div className="main-subheading">
-          <i class="fa-solid fa-ellipsis-vertical"></i> TECH & SKILLS
+          <i className="fa-solid fa-ellipsis-vertical"></i> TECH & SKILLS
         </div>
         <div className="tech-stack">
           {mainToolsData.map((item, index) => (

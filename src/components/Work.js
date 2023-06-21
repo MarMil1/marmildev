@@ -13,7 +13,7 @@ export const Work = () => {
           className="main-subheading work-subheading"
           style={{ display: "flex" }}
         >
-          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <i className="fa-solid fa-ellipsis-vertical"></i>
           <div>COMPANIES I'VE WORKED WITH</div>
         </div>
         <div className="work-header-content">
@@ -28,7 +28,7 @@ export const Work = () => {
             smooth={true}
             duration={500}
           >
-            Let's Chat <i class="fa-solid fa-arrow-right fa-lg"></i>
+            Let's Chat <i className="fa-solid fa-arrow-right fa-lg"></i>
           </Link>
         </div>
       </div>

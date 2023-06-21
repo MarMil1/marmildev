@@ -77,7 +77,7 @@ export const Projects = () => {
     <section id="projects" className="projects section is-white">
       <div className="" style={{ display: "flex", gap: "10%" }}>
         <div className="main-subheading">
-          <i class="fa-solid fa-ellipsis-vertical"></i> PROJECTS
+          <i className="fa-solid fa-ellipsis-vertical"></i> PROJECTS
         </div>
       </div>
       {featuredProjectsData.map((item, index) => (

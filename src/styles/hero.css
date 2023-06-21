@@ -27,21 +27,22 @@
 .contact-btn {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--light-text);
+  color: #FFFFFF;
   padding: 10px;
   border-radius: 10px;
   transition: all 300ms ease-in;
+  background-color: #3E8ED0;
 }
 
 .contact-btn i {
-  color: #3f8ed0;
+  color: #FFFFFF;
   margin-left: 5px;
   transition: all 300ms ease-in;
 }
 
 .contact-btn:hover, .contact-btn:hover i {
   color: #ffffff;
-  background-color: #3f8ed0;
+  background-color: #3a82bd;
   transition: all 300ms ease-in;
 }
 

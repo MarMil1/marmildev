@@ -6,7 +6,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="contact section">
       <div className="main-subheading">
-        <i class="fa-solid fa-ellipsis-vertical"></i> CONTACT
+        <i className="fa-solid fa-ellipsis-vertical"></i> CONTACT
       </div>
       <div className="contact-container-content">
         <div className="contact-container-side">

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/contactForm.css";
 import emailjs from "@emailjs/browser";
 
@@ -11,6 +11,22 @@ export const ContactForm = () => {
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
   const pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$";
+  const [greenCheckmark, setGreenCheckmark] = useState(false);
+  const [testOpen, setTestOpen] = useState(false);
+  const [userResponse, setUserResponse] = useState("");
+  const [firstNum, setFirstNum] = useState(Math.floor(Math.random() * 10));
+  const [secondNum, setSecondNum] = useState(Math.floor(Math.random() * 10));
+
+  useEffect(() => {
+    const finalRes = () => {
+      return firstNum + secondNum;
+    };
+    if (finalRes() === Number(userResponse)) {
+      setGreenCheckmark(true);
+    } else {
+      setGreenCheckmark(false);
+    }
+  }, [testOpen, firstNum, secondNum, userResponse]);
 
   const snackbarSuccess = () => {
     const snackBarContainer = document.getElementById("snackbar-success");
@@ -36,35 +52,49 @@ export const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if (greenCheckmark) {
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+        (result) => {
+          setUserName("");
+          setUserEmail("");
+          setUserMessage("");
+          setTestOpen(false);
+          setGreenCheckmark(false);
+          setUserResponse("");
+          setFirstNum(Math.floor(Math.random() * 10));
+          setSecondNum(Math.floor(Math.random() * 10));
+          snackbarSuccess();
+          console.log(result.text);
+        },
+        (error) => {
+          snackbarFailure();
+          console.log(error.text);
+        }
+      );
+    }
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
-      (result) => {
-        setUserName("");
-        setUserEmail("");
-        setUserMessage("");
-        snackbarSuccess();
-        console.log(result.text);
-      },
-      (error) => {
-        snackbarFailure();
-        console.log(error.text);
-      }
-    );
+    // Commented below is used for testing email service locally
+    // if (greenCheckmark) {
+    //   const result = {
+    //     status: 200,
+    //     text: "OK",
+    //   };
 
-    // const result = {
-    //   status: 200,
-    //   text: "OK",
-    // };
-
-    // if (result.status === 200) {
-    //   setUserName("");
-    //   setUserEmail("");
-    //   setUserMessage("");
-    //   snackbarSuccess();
-    //   console.log("Success");
-    // } else {
-    //   snackbarFailure();
-    //   console.log("Error occured");
+    //   if (result.status === 200) {
+    //     setUserName("");
+    //     setUserEmail("");
+    //     setUserMessage("");
+    //     setTestOpen(false);
+    //     setGreenCheckmark(false);
+    //     setUserResponse("");
+    //     setFirstNum(Math.floor(Math.random() * 10));
+    //     setSecondNum(Math.floor(Math.random() * 10));
+    //     snackbarSuccess();
+    //     console.log("Success");
+    //   } else {
+    //     snackbarFailure();
+    //     console.log("Error occured");
+    //   }
     // }
   };
 
@@ -146,10 +176,47 @@ export const ContactForm = () => {
           ></textarea>
         </div>
       </div>
-
+      <div className="bot-test-container">
+        <div className="check-container">
+          <div onClick={() => setTestOpen(!testOpen)}>
+            <input
+              type="checkbox"
+              id="check"
+              name="check"
+              required
+              checked={greenCheckmark}
+              onChange={() => setGreenCheckmark(false)}
+            />
+            <span className="checkmark"></span>
+          </div>
+          <div className="check-label">I am not a robot</div>
+        </div>
+        <div
+          className={`checked-test-container ${
+            testOpen ? `test-visible` : `test-invisible`
+          }`}
+        >
+          <div className="task-to-solve">
+            {firstNum} + {secondNum}
+          </div>
+          <div className="solution-heading">Enter the solution below</div>
+          <div>
+            <input
+              type="number"
+              className="solution-input"
+              value={userResponse}
+              onChange={(e) => setUserResponse(e.target.value)}
+            />
+          </div>
+        </div>
+      </div>
       <div className="field is-grouped">
         <div className="control">
-          <button className="contact-form-btn" type="submit" value="Send">
+          <button
+            className={`contact-form-btn ${!greenCheckmark && `btn-disabled`}`}
+            type="submit"
+            value="Send"
+          >
             Send
           </button>
         </div>

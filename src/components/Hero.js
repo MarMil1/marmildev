@@ -30,7 +30,7 @@ export const Hero = () => {
           smooth={true}
           duration={500}
         >
-          Let's Chat <i class="fa-solid fa-arrow-right fa-lg"></i>
+          Let's Chat <i className="fa-solid fa-arrow-right fa-lg"></i>
         </Link>
       </div>
       <Link
