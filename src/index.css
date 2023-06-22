@@ -15,6 +15,8 @@
   --hover-button: #2f2f2f;
   --subtext-color: #b7cada;
   --other-projects-blur: #21252bc7;
+  --test-info: #676767;
+  /* --navbar-background: rgba(33, 37, 43, 60%); */
 }
 
 .theme-light {
@@ -34,6 +36,8 @@
   --hover-button: #f2f0f0;
   --subtext-color: #415565;
   --other-projects-blur: #fcfcfccf;
+  --test-info: #b5b5b5;
+  /* --navbar-background: rgba(252, 252, 252, 60%); */
 }
 
 * {

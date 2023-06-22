@@ -98,9 +98,11 @@ export const Projects = () => {
                 ))}
               </div>
               <div className="featured-project-links">
-                <a href={item.sourceURL} target="blank">
-                  <button className="projects-button">Repo</button>
-                </a>
+                {item.sourceURL && (
+                  <a href={item.sourceURL} target="blank">
+                    <button className="projects-button">Repo</button>
+                  </a>
+                )}
                 {item.siteURL && (
                   <a href={item.siteURL} target="blank">
                     <button className="projects-button">Website</button>
