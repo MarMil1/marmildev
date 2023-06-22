@@ -1,3 +1,4 @@
+import cariokka1 from "../assets/cariokka1.webp";
 import redditClient1 from "../assets/reddit-client-1.webp";
 import redditClient2 from "../assets/reddit-client-2.webp";
 import redditClient3 from "../assets/reddit-client-3.webp";
@@ -16,11 +17,48 @@ import marmilBlog5 from "../assets/marmil-blog-5.gif";
 
 export const featuredProjectsData = [
   {
+    name: "Cariokka (Upcoming)",
+    backgroundColor: "#303030",
+    description: `Next.js app that helps athletic/health clubs manage their business operations. 
+      Features: multiple accounts registration, multiple clubs generation, dashboard, and more.`,
+    tools: [
+      {
+        name: "devicon-react-original",
+        tooltip: "React",
+      },
+      {
+        name: "devicon-nextjs-line",
+        tooltip: "Next.js",
+      },
+      {
+        name: "devicon-html5-plain",
+        tooltip: "HTML",
+      },
+      {
+        name: "devicon-css3-plain",
+        tooltip: "CSS3",
+      },
+      {
+        name: "devicon-typescript-plain colored",
+        tooltip: "TypeScript",
+      },
+      {
+        name: "devicon-postgresql-plain colored",
+        tooltip: "PostgreSQL",
+      },
+    ],
+    media: {
+      0: cariokka1,
+    },
+    siteURL: "https://www.cariokka.com",
+    sourceURL: "",
+  },
+  {
     name: "Reddit-Client",
     backgroundColor: "#303030",
     description: `React app showing Reddit posts and their numerous data points 
       fetched from Reddit's JSON API using Axios and Redux Toolkit's createAsyncThunk callback function. 
-      Features built: post search, filter, multiple topic selection, skeleton loading, responsive UI.`,
+      Features: post search, filter, multiple topic selection, skeleton loading, responsive UI.`,
     tools: [
       {
         name: "devicon-react-original",
@@ -62,7 +100,7 @@ export const featuredProjectsData = [
     backgroundColor: "#303030",
     description: `Angular desktop app used for creating/editing custom adverisement banners. 
     The generated content is uploaded to third party project management tool for further distribution. 
-    Updated ad content generates HTML and CSS code for marketing team's use. Features built: 
+    Updated ad content generates HTML and CSS code for marketing team's use. Features: 
     edit forms, iframe used to adapt banners on various device sizes,
     download generated code feature.`,
     tools: [
@@ -102,7 +140,7 @@ export const featuredProjectsData = [
     backgroundColor: "#9a8888",
     description: `Ruby on Rails social journalism app used to post articles and comments. 
     Users can create an account, add articles/comments, view each other's posts, like and 
-    save articles to favorites. Features built: login/logout, user view each other's profiles, 
+    save articles to favorites. Features: login/logout, user view each other's profiles, 
     CRUD(user profile, posts/comments, user image, article image, likes, favorites).`,
     tools: [
       {

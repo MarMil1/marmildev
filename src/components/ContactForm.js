@@ -18,6 +18,7 @@ export const ContactForm = () => {
   const [secondNum, setSecondNum] = useState(
     Math.floor(Math.random() * 10) + 1
   );
+  const [isInfoOpen, setIsInfoOpen] = useState(false);
 
   useEffect(() => {
     const finalRes = () => {
@@ -210,9 +211,24 @@ export const ContactForm = () => {
             <div className="reset-test" onClick={resetTest}>
               <i class="fa-solid fa-arrows-rotate"></i>
             </div>
+            <div
+              className="test-info-container"
+              onClick={() => setIsInfoOpen(!isInfoOpen)}
+            >
+              ?
+              <div
+                className={`test-info ${
+                  isInfoOpen ? `test-info-open` : `test-info-closed`
+                }`}
+              >
+                Enter the correct sum of two numbers in the input box below.
+              </div>
+            </div>
           </div>
 
-          <div className="solution-heading">Enter the solution below</div>
+          <div className="solution-heading">
+            To continue, enter your response.
+          </div>
           <div>
             <input
               type="number"

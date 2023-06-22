@@ -15,16 +15,26 @@ export const About = () => {
         <div className="main-subheading">
           <i className="fa-solid fa-ellipsis-vertical"></i> HELLO! I'M MARKO.
         </div>
-        <p className="about-bio-content">
-          I'm a full stack software developer with more than {originDate} years
-          of experience in programming. Developing software is a passion of mine
-          in which I seek to provide the best solutions possible for projects I
-          work on. I like working on challenging tasks and learning new
-          technologies that help me enrich my skill toolbox. Some of the
-          technologies I am familiar with are JavaScript, React, Redux, HTML,
-          CSS, and PostgreSQL. Enjoy my website and drop me a message if you'd
-          like to chat.
-        </p>
+        <ul className="about-bio-content">
+          <li>
+            <span>• </span>
+            Software developer with more than {originDate} years of experience
+            in programming.
+          </li>{" "}
+          <li>
+            <span>• </span>
+            Developing software is a passion of mine in which I seek to provide
+            the best solutions possible for projects I work on. I like working
+            on challenging tasks and learning new technologies that help me
+            enrich my skills toolbox.
+          </li>
+          <li>
+            <span>• </span>
+            Technologies I'm familiar with: JavaScript, React, Redux, HTML, CSS,
+            PostgreSQL, and more. Enjoy my website and drop me a message if
+            you'd like to chat.
+          </li>
+        </ul>
         <div className="connect-content">
           Would you like to connect and work together?
         </div>
