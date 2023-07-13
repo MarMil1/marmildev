@@ -24,7 +24,7 @@ export const featuredProjectsData = [
     operations. This upcoming project will feature effortless generation 
     of multiple clubs, seamless multiple accounts registration,
     a user-friendly dashboard, and more. Stay tuned for updates as I 
-    bring this innovative solution to life!"`,
+    bring this innovative solution to life!`,
     tools: [
       {
         name: "devicon-nextjs-line",
