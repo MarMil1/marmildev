@@ -125,10 +125,14 @@
     justify-self: center;
 }
 
+.more-projects-header-button i {
+    position: relative;
+    top: 20px;
+}
+
 @media screen and (max-width: 550px) {
     .more-projects-heading {
         grid-template-columns: 1fr;
-        gap: 10px;
     }
 
     .second-subheading {
@@ -141,6 +145,10 @@
 
     .more-projects-header-button {
         justify-self: left;
+    }
+
+    .more-projects-header-button i {
+        top: 0
     }
 }
 

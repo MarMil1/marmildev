@@ -31,16 +31,14 @@
 
 .work-header-content {
     text-align: left;
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     margin-top: 10px;
     color: var(--subtext-color);
 }
 
 .work-header-contact-btn {
-    width: 50%;
-    margin-top: 10px;
-    font-size: 1.5rem !important;
-    justify-self: center;
+    top: 20px;
+    position: relative;
 }
 
 .work-logo {
@@ -66,14 +64,7 @@
     .work-header {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
         justify-items: start;
-    }
-
-    .work-header-contact-btn {
-        justify-self: left;
-        font-size: 1.2rem !important;
-        width: fit-content;
     }
 
     .work-subheading {

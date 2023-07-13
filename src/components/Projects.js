@@ -125,10 +125,12 @@ export const Projects = () => {
         </div>
       ))}
       <div className="more-projects-heading">
-        <div className="second-subheading">Want to see more projects?</div>
+        <div className="second-subheading">
+          Curious to explore more of my work?
+        </div>
         <div className="more-projects-header-content">
-          Check out my GitHub for previous work, additional projects and various
-          tools I used.
+          Visit my GitHub profile for a comprehensive collection of previous
+          projects, additional works, and a wide range of tools I've utilized.
         </div>
         <div className="more-projects-header-button">
           <a href="https://github.com/MarMil1" target="blank">
