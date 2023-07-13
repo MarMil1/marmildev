@@ -19,16 +19,20 @@ export const featuredProjectsData = [
   {
     name: "Cariokka (Upcoming)",
     backgroundColor: "#303030",
-    description: `Next.js app that helps athletic/health clubs manage their business operations. 
-      Features: multiple accounts registration, multiple clubs generation, dashboard, and more.`,
+    description: `Exciting plans underway for a Next.js app that aims 
+    to revolutionize the way athletic/health clubs manage their business 
+    operations. This upcoming project will feature effortless generation 
+    of multiple clubs, seamless multiple accounts registration,
+    a user-friendly dashboard, and more. Stay tuned for updates as I 
+    bring this innovative solution to life!"`,
     tools: [
-      {
-        name: "devicon-react-original",
-        tooltip: "React",
-      },
       {
         name: "devicon-nextjs-line",
         tooltip: "Next.js",
+      },
+      {
+        name: "devicon-react-original",
+        tooltip: "React",
       },
       {
         name: "devicon-html5-plain",
@@ -56,9 +60,15 @@ export const featuredProjectsData = [
   {
     name: "Reddit-Client",
     backgroundColor: "#303030",
-    description: `React app showing Reddit posts and their numerous data points 
-      fetched from Reddit's JSON API using Axios and Redux Toolkit's createAsyncThunk callback function. 
-      Features: post search, filter, multiple topic selection, skeleton loading, responsive UI.`,
+    description: `Created a dynamic React application that displays Reddit 
+    posts along with a wealth of data points fetched from Reddit's JSON API. 
+    Leveraging Axios for API requests and Redux Toolkit's createAsyncThunk 
+    callback function, this project offers an array of features, 
+    including post search, filter capabilities, the ability to select 
+    multiple topics, a skeleton loading UI for smooth user experience, 
+    and a responsive user interface. Explore this project to witness the 
+    seamless integration of Reddit's API data into a user-friendly 
+    and interactive application.`,
     tools: [
       {
         name: "devicon-react-original",
@@ -98,11 +108,16 @@ export const featuredProjectsData = [
   {
     name: "AdShark",
     backgroundColor: "#303030",
-    description: `Angular desktop app used for creating/editing custom adverisement banners. 
-    The generated content is uploaded to third party project management tool for further distribution. 
-    Updated ad content generates HTML and CSS code for marketing team's use. Features: 
-    edit forms, iframe used to adapt banners on various device sizes,
-    download generated code feature.`,
+    description: `Developed a versatile Angular desktop application specifically 
+    designed for creating and editing custom advertisement banners. This powerful 
+    app streamlines the process by allowing users to generate content that can be 
+    seamlessly uploaded to a third-party project management tool for efficient 
+    distribution. Notably, the app generates HTML and CSS code from the updated 
+    ad content, providing the marketing team with ready-to-use assets. Key 
+    features include intuitive edit forms, an adaptive iframe that ensures optimal 
+    banner display across various device sizes, and a convenient download feature 
+    for accessing the generated code. Discover how this app simplifies and 
+    enhances the banner creation process.`,
     tools: [
       {
         name: "devicon-angularjs-plain",
@@ -138,18 +153,24 @@ export const featuredProjectsData = [
   {
     name: "Marmil_Blog",
     backgroundColor: "#9a8888",
-    description: `Ruby on Rails social journalism app used to post articles and comments. 
-    Users can create an account, add articles/comments, view each other's posts, like and 
-    save articles to favorites. Features: login/logout, user view each other's profiles, 
-    CRUD(user profile, posts/comments, user image, article image, likes, favorites).`,
+    description: `Built a dynamic Ruby on Rails social journalism application 
+    that enables users to create and share articles as well as engage in 
+    discussions through comments. The app offers user account creation, 
+    article and comment creation functionality, and the ability to view and 
+    interact with other users' posts. Users can like articles and save them to 
+    their favorites for easy access. Key features include login/logout 
+    functionality, user profile viewing, and comprehensive CRUD operations for 
+    user profiles, posts, comments, user and article images, as well as 
+    managing likes and favorites. Experience seamless social journalism and 
+    collaboration with this Ruby on Rails app.`,
     tools: [
-      {
-        name: "devicon-ruby-plain",
-        tooltip: "Ruby",
-      },
       {
         name: "devicon-rails-plain",
         tooltip: "Ruby on Rails",
+      },
+      {
+        name: "devicon-ruby-plain",
+        tooltip: "Ruby",
       },
       {
         name: "devicon-html5-plain",

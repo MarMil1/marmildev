@@ -14,13 +14,15 @@ export const Work = () => {
           style={{ display: "flex" }}
         >
           <i className="fa-solid fa-ellipsis-vertical"></i>
-          <div>COMPANIES I'VE WORKED WITH</div>
+          <div>COMPANIES I'VE PARTNERED WITH</div>
         </div>
         <div className="work-header-content">
-          Companies I genuinely appreciate for placing their trust in me with
-          their projects. Interested in learning more?
+        These esteemed companies have placed their trust in me to bring their 
+        projects to life. I genuinely appreciate the opportunity to work with 
+        each one of them. Curious to learn more about these collaborations and 
+        the impactful projects we've undertaken? Let's dive deeper into the details.
         </div>
-        <div>
+        <div className="work-header-contact-btn">
           <Link
             className="contact-btn"
             to="contact"

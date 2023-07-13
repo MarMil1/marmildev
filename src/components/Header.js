@@ -142,7 +142,6 @@ export const Header = () => {
       <Link to="navbar" spy={true} smooth={true} offset={-70} duration={500}>
         <div id="go-to-top-btn" className="go-to-top-btn">
           <i className="fa fa-2x fa-angle-up"></i>
-          Scroll To Top
         </div>
       </Link>
     </header>

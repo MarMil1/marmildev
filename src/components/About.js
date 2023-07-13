@@ -18,25 +18,23 @@ export const About = () => {
         <ul className="about-bio-content">
           <li>
             <span>• </span>
-            Software developer with more than {originDate} years of experience
-            in programming.
+            As a software developer with over 2 years of experience, I am deeply
+            passionate about creating exceptional solutions for the projects I
+            work on.
           </li>{" "}
           <li>
-            <span>• </span>
-            Developing software is a passion of mine in which I seek to provide
-            the best solutions possible for projects I work on. I like working
-            on challenging tasks and learning new technologies that help me
-            enrich my skills toolbox.
+            <span>• </span>I thrive on challenging tasks and continuously seek
+            to expand my skill set by exploring new technologies. My expertise
+            includes JavaScript, React, Redux, HTML, CSS, PostgreSQL, and more.
           </li>
           <li>
             <span>• </span>
-            Technologies I'm familiar with: JavaScript, React, Redux, HTML, CSS,
-            PostgreSQL, and more. Enjoy my website and drop me a message if
-            you'd like to chat.
+            Feel free to explore my website, and don't hesitate to reach out if
+            you'd like to connect and discuss your project.
           </li>
         </ul>
         <div className="connect-content">
-          Would you like to connect and work together?
+          Ready to collaborate? Let's bring your ideas to life together!
         </div>
         <Link
           className="contact-btn"
