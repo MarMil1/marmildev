@@ -209,7 +209,7 @@ export const ContactForm = () => {
               {firstNum} + {secondNum}
             </div>
             <div className="reset-test" onClick={resetTest}>
-              <i class="fa-solid fa-arrows-rotate"></i>
+              <i className="fa-solid fa-arrows-rotate"></i>
             </div>
             <div
               className="test-info-container"

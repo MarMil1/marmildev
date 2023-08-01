@@ -20,7 +20,7 @@ export const Hero = () => {
 
   return (
     <div className="header-hero-wrapper">
-      <img class="landing-image" src={bgImage} alt="" />
+      <img className="landing-image" src={bgImage} alt="" />
       <Header />
       <section id="hero" className="hero is-transparent has-text-centered">
         <div id="hero-body" className="hero-body">

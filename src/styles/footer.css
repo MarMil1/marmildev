@@ -24,3 +24,16 @@
         flex-direction: column;
     }
 }
+
+.relative-position {
+    position: relative;
+}
+
+.footer-external-link-icon {
+    position: absolute;
+    top: -10px;
+}
+
+.footer-external-link-icon i {
+    font-size: 10px;
+}

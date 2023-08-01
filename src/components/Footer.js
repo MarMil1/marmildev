@@ -56,6 +56,19 @@ export const Footer = () => {
             Contact
           </Link>
         </div>
+        <div className="">
+          <a
+            className="footer-nav relative-position"
+            href="https://sandglass.fly.dev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Blog
+            <span className="footer-external-link-icon">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </div>
       </div>
       <div className="footer-center">
         <div className="footer-logo">
