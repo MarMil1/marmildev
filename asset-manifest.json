@@ -1,11 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5a7ed18.css",
-    "main.js": "/static/js/main.47579bfe.js",
+    "main.css": "/static/css/main.ee63d4a5.css",
+    "main.js": "/static/js/main.1269a054.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
-    "static/media/reddit-client-5.gif": "/static/media/reddit-client-5.6f03fc4adf3c8a3169d2.gif",
-    "static/media/marmil-blog-5.gif": "/static/media/marmil-blog-5.91af7eddbcc455a20cfc.gif",
-    "static/media/adshark-5.gif": "/static/media/adshark-5.f0fb44b1dc8ff7d4457b.gif",
     "static/media/lp-1.webp": "/static/media/lp-1.d8edd308c06cc8f32695.webp",
     "static/media/reddit-client-2.webp": "/static/media/reddit-client-2.bd2f78c947817cb43ef0.webp",
     "static/media/adshark-1.webp": "/static/media/adshark-1.110c5af5807785000d1c.webp",
@@ -14,15 +11,15 @@
     "static/media/reddit-client-1.webp": "/static/media/reddit-client-1.6ade2f890db114264f8e.webp",
     "static/media/adshark-4.webp": "/static/media/adshark-4.504bea116fdc77729681.webp",
     "static/media/adshark-2.webp": "/static/media/adshark-2.88129a190cd294b8819f.webp",
-    "static/media/marmil-blog-2.webp": "/static/media/marmil-blog-2.f338d713b7f6c3f64d68.webp",
-    "static/media/marmil-blog-1.webp": "/static/media/marmil-blog-1.fe8f5c509d8f808c959f.webp",
     "static/media/rnd.svg": "/static/media/rnd.81c8047dc59da4190df47f6fd23ac540.svg",
-    "static/media/marmil-blog-4.webp": "/static/media/marmil-blog-4.3cda20b51e4fa5494c8e.webp",
+    "static/media/sandglass-1.webp": "/static/media/sandglass-1.9dd0a06dc50952de6ba1.webp",
+    "static/media/sandglass-4.webp": "/static/media/sandglass-4.b301ac458fd839a39b3d.webp",
     "static/media/reddit-client-4.webp": "/static/media/reddit-client-4.46c52606dda32ead4e7b.webp",
     "static/media/reddit-client-3.webp": "/static/media/reddit-client-3.cffa8b65f2eefc8d3bba.webp",
     "static/media/proseeder.svg": "/static/media/proseeder.1076fe20c532ef401d6edcb92154c086.svg",
     "static/media/codepen-1.webp": "/static/media/codepen-1.5ef07b10b34f6111f7f5.webp",
-    "static/media/marmil-blog-3.webp": "/static/media/marmil-blog-3.3ec6c93cafb1ab4717f1.webp",
+    "static/media/sandglass-3.webp": "/static/media/sandglass-3.c23d8184c7e91d0cac49.webp",
+    "static/media/sandglass-2.webp": "/static/media/sandglass-2.539ac55669dce57b8f03.webp",
     "static/media/stack-overflow-ide-1.webp": "/static/media/stack-overflow-ide-1.55900cd9725a68f2af5a.webp",
     "static/media/bizCards-1.webp": "/static/media/bizCards-1.5caa688183831da82c9f.webp",
     "static/media/bmmn-viz-1.webp": "/static/media/bmmn-viz-1.1c1f464f01acc6664029.webp",
@@ -32,13 +29,13 @@
     "static/media/stock-watch-1.webp": "/static/media/stock-watch-1.1db304edbbeeb7bacd29.webp",
     "static/media/sphere.svg": "/static/media/sphere.8cb44d81b9a34f62348c7bbfd046bd92.svg",
     "index.html": "/index.html",
-    "static/media/cariokka1.webp": "/static/media/cariokka1.c2565979c17c8f48d097.webp",
-    "main.c5a7ed18.css.map": "/static/css/main.c5a7ed18.css.map",
-    "main.47579bfe.js.map": "/static/js/main.47579bfe.js.map",
+    "static/media/cariokka-1.webp": "/static/media/cariokka-1.c2565979c17c8f48d097.webp",
+    "main.ee63d4a5.css.map": "/static/css/main.ee63d4a5.css.map",
+    "main.1269a054.js.map": "/static/js/main.1269a054.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5a7ed18.css",
-    "static/js/main.47579bfe.js"
+    "static/css/main.ee63d4a5.css",
+    "static/js/main.1269a054.js"
   ]
 }
