@@ -138,12 +138,15 @@ export const Header = () => {
             </div>
             <div className="navbar-item">
               <a
-                className="active"
+                className="active relative-pos"
                 href="https://sandglass.fly.dev"
                 target="_blank"
                 rel="noreferrer"
               >
                 Blog
+                <span className="nav-external-link-icon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
               </a>
             </div>
           </div>

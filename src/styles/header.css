@@ -61,6 +61,21 @@ a.navbar-item:hover {
     font-weight: 500;
 }
 
+.relative-pos {
+    position: relative;
+}
+
+.nav-external-link-icon {
+    position: absolute;
+    top: -10px;
+    left: 32px;
+    pointer-events: none;
+}
+
+.nav-external-link-icon i {
+    font-size: 10px;
+}
+
 @media screen and (max-width: 1023px) {
     .contact-btn {
         margin-right: 0px;
