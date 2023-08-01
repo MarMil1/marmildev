@@ -1,19 +1,16 @@
-import cariokka1 from "../assets/cariokka1.webp";
+import cariokka1 from "../assets/cariokka-1.webp";
 import redditClient1 from "../assets/reddit-client-1.webp";
 import redditClient2 from "../assets/reddit-client-2.webp";
 import redditClient3 from "../assets/reddit-client-3.webp";
 import redditClient4 from "../assets/reddit-client-4.webp";
-import redditClient5 from "../assets/reddit-client-5.gif";
 import adshark1 from "../assets/adshark-1.webp";
 import adshark2 from "../assets/adshark-2.webp";
 import adshark3 from "../assets/adshark-3.webp";
 import adshark4 from "../assets/adshark-4.webp";
-import adshark5 from "../assets/adshark-5.gif";
 import sandglass1 from "../assets/sandglass-1.webp";
 import sandglass2 from "../assets/sandglass-2.webp";
 import sandglass3 from "../assets/sandglass-3.webp";
 import sandglass4 from "../assets/sandglass-4.webp";
-import sandglass5 from "../assets/sandglass-5.gif";
 
 export const featuredProjectsData = [
   {
@@ -100,7 +97,7 @@ export const featuredProjectsData = [
       1: redditClient2,
       2: redditClient3,
       3: redditClient4,
-      4: redditClient5,
+      4: "https://res.cloudinary.com/dqjycpuar/image/upload/v1690911143/marmildev_assets/reddit-client-5_mq7d34.gif",
     },
     siteURL: "https://reddit-client22.netlify.app",
     sourceURL: "https://github.com/MarMil1/reddit-client",
@@ -145,7 +142,7 @@ export const featuredProjectsData = [
       1: adshark2,
       2: adshark3,
       3: adshark4,
-      4: adshark5,
+      4: "https://res.cloudinary.com/dqjycpuar/image/upload/v1690911082/marmildev_assets/adshark-5_qyatz4.gif",
     },
     siteURL: "https://marmil1.github.io/AdShark/",
     sourceURL: "https://github.com/MarMil1/AdShark",
@@ -194,7 +191,7 @@ export const featuredProjectsData = [
       1: sandglass2,
       2: sandglass3,
       3: sandglass4,
-      4: sandglass5,
+      4: "https://res.cloudinary.com/dqjycpuar/image/upload/v1690911128/marmildev_assets/sandglass-5_xlvkyk.gif",
     },
     siteURL: "https://sandglass.fly.dev",
     sourceURL: "https://github.com/MarMil1/sandglass",
