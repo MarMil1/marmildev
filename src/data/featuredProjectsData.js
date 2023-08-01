@@ -9,11 +9,11 @@ import adshark2 from "../assets/adshark-2.webp";
 import adshark3 from "../assets/adshark-3.webp";
 import adshark4 from "../assets/adshark-4.webp";
 import adshark5 from "../assets/adshark-5.gif";
-import marmilBlog1 from "../assets/marmil-blog-1.webp";
-import marmilBlog2 from "../assets/marmil-blog-2.webp";
-import marmilBlog3 from "../assets/marmil-blog-3.webp";
-import marmilBlog4 from "../assets/marmil-blog-4.webp";
-import marmilBlog5 from "../assets/marmil-blog-5.gif";
+import sandglass1 from "../assets/sandglass-1.webp";
+import sandglass2 from "../assets/sandglass-2.webp";
+import sandglass3 from "../assets/sandglass-3.webp";
+import sandglass4 from "../assets/sandglass-4.webp";
+import sandglass5 from "../assets/sandglass-5.gif";
 
 export const featuredProjectsData = [
   {
@@ -151,7 +151,7 @@ export const featuredProjectsData = [
     sourceURL: "https://github.com/MarMil1/AdShark",
   },
   {
-    name: "Marmil_Blog",
+    name: "Sandglass",
     backgroundColor: "#9a8888",
     description: `Built a dynamic Ruby on Rails social journalism application 
     that enables users to create and share articles as well as engage in 
@@ -190,13 +190,13 @@ export const featuredProjectsData = [
       },
     ],
     media: {
-      0: marmilBlog1,
-      1: marmilBlog2,
-      2: marmilBlog3,
-      3: marmilBlog4,
-      4: marmilBlog5,
+      0: sandglass1,
+      1: sandglass2,
+      2: sandglass3,
+      3: sandglass4,
+      4: sandglass5,
     },
-    siteURL: "https://marmil-blog.fly.dev/",
-    sourceURL: "https://github.com/MarMil1/marmilblog",
+    siteURL: "https://sandglass.fly.dev",
+    sourceURL: "https://github.com/MarMil1/sandglass",
   },
 ];

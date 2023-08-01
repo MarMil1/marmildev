@@ -136,6 +136,16 @@ export const Header = () => {
                 Contact
               </Link>
             </div>
+            <div className="navbar-item">
+              <a
+                className="active"
+                href="https://sandglass.fly.dev"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blog
+              </a>
+            </div>
           </div>
         </div>
       </nav>
