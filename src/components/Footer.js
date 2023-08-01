@@ -59,7 +59,7 @@ export const Footer = () => {
         <div className="">
           <a
             className="footer-nav relative-position"
-            href="https://sandglass.fly.io"
+            href="https://sandglass.fly.dev"
             target="_blank"
             rel="noreferrer"
           >
