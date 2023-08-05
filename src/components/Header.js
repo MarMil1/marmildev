@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import "../styles/header.css";
 import { Link } from "react-scroll";
 import { ToggleTheme } from "./ToggleTheme";
+import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
 
 export const Header = () => {
+  const gaEventTracker = useAnalyticsEventTracker("Header");
   // const [click, setClick] = useState(false);
   // const isClicked = () => setClick(!click);
 
@@ -99,6 +101,7 @@ export const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
+                onClick={() => gaEventTracker("about")}
               >
                 About
               </Link>
@@ -110,6 +113,7 @@ export const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
+                onClick={() => gaEventTracker("projects")}
               >
                 Projects
               </Link>
@@ -121,6 +125,7 @@ export const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
+                onClick={() => gaEventTracker("work")}
               >
                 Work
               </Link>
@@ -132,6 +137,7 @@ export const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
+                onClick={() => gaEventTracker("contact")}
               >
                 Contact
               </Link>
@@ -142,6 +148,7 @@ export const Header = () => {
                 href="https://sandglass.fly.dev"
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => gaEventTracker("blog")}
               >
                 Blog
                 <span className="nav-external-link-icon">

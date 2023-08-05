@@ -5,9 +5,9 @@ import { mainToolsData } from "../data/mainToolsData";
 import { Link } from "react-scroll";
 
 export const About = () => {
-  const end = new Date().getFullYear();
-  const start = new Date(process.env.REACT_APP_ORIGIN_DATE).getFullYear();
-  const originDate = end - start;
+  // const end = new Date().getFullYear();
+  // const start = new Date(process.env.REACT_APP_ORIGIN_DATE).getFullYear();
+  // const originDate = end - start;
 
   return (
     <section id="about" className="about section has-text-centered">
