@@ -4,8 +4,10 @@ import { featuredProjectsData } from "../data/featuredProjectsData";
 import { projectData } from "../data/projectData";
 import { ProjectSlideshow } from "./ProjectSlideshow";
 import { OtherProjects } from "./OtherProjects";
+import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
 
 export const Projects = () => {
+  const gaEventTracker = useAnalyticsEventTracker("Projects");
   /**
    * It scrolls the projects container to the left
    * by the width of the project container
@@ -99,12 +101,20 @@ export const Projects = () => {
               </div>
               <div className="featured-project-links">
                 {item.sourceURL && (
-                  <a href={item.sourceURL} target="blank">
+                  <a
+                    href={item.sourceURL}
+                    target="blank"
+                    onClick={() => gaEventTracker(`${item.name}_repo`)}
+                  >
                     <button className="projects-button">Repo</button>
                   </a>
                 )}
                 {item.siteURL && (
-                  <a href={item.siteURL} target="blank">
+                  <a
+                    href={item.siteURL}
+                    target="blank"
+                    onClick={() => gaEventTracker(`${item.name}_website`)}
+                  >
                     <button className="projects-button">Website</button>
                   </a>
                 )}

@@ -1,8 +1,10 @@
 import React from "react";
 import "../styles/contact.css";
 import { ContactForm } from "./ContactForm";
+import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
 
 export const Contact = () => {
+  const gaEventTracker = useAnalyticsEventTracker("Contact");
   return (
     <section id="contact" className="contact section">
       <div className="main-subheading">
@@ -18,6 +20,7 @@ export const Contact = () => {
             <a
               href="https://linkedin.com/in/marko-milosavljevic"
               target="blank"
+              onClick={() => gaEventTracker("linkedin")}
             >
               LinkedIn{" "}
             </a>{" "}
@@ -30,17 +33,26 @@ export const Contact = () => {
               <a
                 href="https://linkedin.com/in/marko-milosavljevic"
                 target="blank"
+                onClick={() => gaEventTracker("linkedin")}
               >
                 <i className="fa-brands fa-linkedin fa-2x"></i>
               </a>
             </div>
             <div className="contact-social-item" title="GitHub profile.">
-              <a href="https://github.com/MarMil1" target="blank">
+              <a
+                href="https://github.com/MarMil1"
+                target="blank"
+                onClick={() => gaEventTracker("github")}
+              >
                 <i className="fa-brands fa-github fa-2x"></i>
               </a>
             </div>
             <div className="contact-social-item" title="Codepen profile.">
-              <a href="https://codepen.io/marmil1" target="blank">
+              <a
+                href="https://codepen.io/marmil1"
+                target="blank"
+                onClick={() => gaEventTracker("codepen")}
+              >
                 <i className="fa-brands fa-codepen fa-2x"></i>
               </a>
             </div>

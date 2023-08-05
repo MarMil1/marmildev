@@ -3,8 +3,10 @@ import { Link } from "react-scroll";
 import "../styles/hero.css";
 import { Header } from "../components/Header";
 import bgImage from "../assets/lp-1.webp";
+import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
 
 export const Hero = () => {
+  const gaEventTracker = useAnalyticsEventTracker("Hero");
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const heroContainer = document.getElementById("hero");
@@ -35,6 +37,7 @@ export const Hero = () => {
             spy={true}
             smooth={true}
             duration={500}
+            onClick={() => gaEventTracker("lets_chat")}
           >
             Let's Chat <i className="fa-solid fa-arrow-right fa-lg"></i>
           </Link>

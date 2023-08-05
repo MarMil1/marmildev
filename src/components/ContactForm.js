@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/contactForm.css";
 import emailjs from "@emailjs/browser";
+import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
 
 export const ContactForm = () => {
+  const gaEventTracker = useAnalyticsEventTracker("Contact Form");
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
@@ -245,6 +247,7 @@ export const ContactForm = () => {
             className={`contact-form-btn ${!greenCheckmark && `btn-disabled`}`}
             type="submit"
             value="Send"
+            onClick={() => gaEventTracker("send_message")}
           >
             Send
           </button>
