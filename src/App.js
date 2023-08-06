@@ -10,12 +10,12 @@ import { SplashScreen } from "./components/SplashScreen";
 import { useEffect, useState } from "react";
 import { keepTheme } from "./helpers/themes";
 import { NotFound } from "./components/NotFound";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 function App() {
   const TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID;
   ReactGA.initialize(TRACKING_ID);
-  ReactGA.pageview("/");
+  ReactGA.send({ hitType: "pageview", page: "/", title: "Homepage Path" });
   const [isSplashScreen, setIsSplashScreen] = useState(false);
 
   useEffect(() => {
