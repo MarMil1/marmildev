@@ -65,7 +65,7 @@ export const Footer = () => {
           >
             Blog
             <span className="footer-external-link-icon">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </span>
           </a>
         </div>
