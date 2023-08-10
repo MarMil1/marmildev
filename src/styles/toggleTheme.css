@@ -1,3 +1,19 @@
 .container-toggle {
     cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    background-color: #ce7a34eb;
+    z-index: 2;
+    color: white;
+    font-size: 1rem;
+}
+
+.container-toggle .fa-solid.fa-sun {
+    margin: 13px 13px;
+}
+
+.container-toggle .fa-solid.fa-moon {
+    margin: 12px 15px;
 }

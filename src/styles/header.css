@@ -9,9 +9,13 @@
     border-top: 4px solid #3f8ed0;
 }
 
-
 .navbar-brand {
     align-items: center;
+}
+
+.navbar-brand .logo {
+    width: 70px;
+    height: auto;
 }
 
 .navbar-burger:hover {
@@ -20,10 +24,6 @@
 
 .logo {
     margin-left: 20px;
-}
-
-.logo-svg-container {
-    transform: scale(.90) rotate(-90deg);
 }
 
 .navbar .navbar-brand .navbar-burger {
@@ -82,33 +82,10 @@ a.navbar-item:hover {
     }
 }
 
-.logo-letter-one {
-    stroke: #CE7A34;
-    stroke-width: 25; 
-    fill: none; 
-    transform: translate(30px, 170px);
-    transform-origin: 50% 50%;
-  }
-
-  .logo-letter-two {
-    stroke: #3E8ED0;
-    stroke-width: 25; 
-    fill: none; 
-    transform: rotate(180deg) translate(30px, 170px);
-    transform-origin: 50% 50%;
-  }
-
-  .logo-line {
-    stroke: #868482; 
-    stroke-width: 7; 
-    fill: none;
-    transform: translate(-30px, -30px);
-  }
-
-  .go-to-top-btn {
+.go-to-top-btn {
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 75px;
     z-index: 2;
     cursor: pointer;
     display: flex;
@@ -123,19 +100,19 @@ a.navbar-item:hover {
     opacity: 1;
     transition: opacity 600ms linear;
     border-radius: 50%;
-  }
+}
 
-  .go-to-top-btn i {
+.go-to-top-btn i {
     font-size: 1.5rem;
     color: #fcfcfc;
-  }
-  
-  .go-to-top-btn:hover {
-    background-color: #ce7a34;
-  }
+}
 
-  .go-to-top-btn-hidden {
+.go-to-top-btn:hover {
+    background-color: #ce7a34;
+}
+
+.go-to-top-btn-hidden {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 400ms, opacity 400ms linear;
-  }
+}
