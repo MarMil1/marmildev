@@ -20,48 +20,71 @@
 }
 
 .splash-logo {
-    transform: scale(3) rotate(-90deg);
-}
-
-.splash-logo-dark {
-    transform: scale(3) rotate(90deg);
+    transform: scale(3);
 }
 
 .splash-letter-one {
     transform-origin: 50% 50%;
-    transform: rotate(0deg) translate(30px, 170px);
-    animation: moveDown 2s ease-out 0s 1;
-    -webkit-animation: moveDown 2s ease-out 0s 1;
-    -moz-animation: moveDown 2s ease-out 0s 1;
-    -ms-animation: moveDown 2s ease-out 0s 1;
-    -o-animation: moveDown 2s ease-out 0s 1;
-    animation-play-state: running;
+    transform: translate(0px, 0px) scale(0.4);
+    opacity: 1;
+    animation: blueLetter 1.2s ease-out 0s 1;
+    -webkit-animation: blueLetter 1.2s ease-out 0s 1;
+    -moz-animation: blueLetter 1.2s ease-out 0s 1;
+    -ms-animation: blueLetter 1.2s ease-out 0s 1;
+    -o-animation: blueLetter 1.2s ease-out 0s 1;
 }
 
 .splash-letter-two {
     transform-origin: 50% 50%;
-    transform: rotate(180deg) translate(30px, 170px);
-    animation: moveUp 2s ease-out 0s 1;
-    -webkit-animation: moveUp 2s ease-out 0s 1;
-    -moz-animation: moveUp 2s ease-out 0s 1;
-    -ms-animation: moveUp 2s ease-out 0s 1;
-    -o-animation: moveUp 2s ease-out 0s 1;
+    transform: translate(0px, 0px) scale(0.4);
+    opacity: 1;
+    animation: orangeLetter 1.2s ease-out 0s 1;
+    -webkit-animation: orangeLetter 1.2s ease-out 0s 1;
+    -moz-animation: orangeLetter 1.2s ease-out 0s 1;
+    -ms-animation: orangeLetter 1.2s ease-out 0s 1;
+    -o-animation: orangeLetter 1.2s ease-out 0s 1;
 }
 
-@keyframes moveDown {
+.logo-line {
+    transform-origin: 50% 50%;
+    transform: translate(0px, 0px) scale(0.4);
+    opacity: 1;
+    animation: fadeInGrayLine 1.2s ease-out 0s 1;
+    -webkit-animation: fadeInGrayLine 1.2s ease-out 0s 1;
+    -moz-animation: fadeInGrayLine 1.2s ease-out 0s 1;
+    -ms-animation: fadeInGrayLine 1.2s ease-out 0s 1;
+    -o-animation: fadeInGrayLine 1.2s ease-out 0s 1;
+}
+
+@keyframes blueLetter {
     0% {
-        transform: translate(30px, 17px);
+        transform: translate(60px, 0px) scale(1) rotateY(-180deg);
+        opacity: 0;
     }
     100% {
-        transform: translate(30px, 170px);
+        transform: translate(0px, 0px) scale(0.4) rotateY(0deg);
+        opacity: 1;
     }
   }
 
-  @keyframes moveUp {
+  @keyframes orangeLetter {
     0% {
-        transform: rotate(180deg) rotate(0deg) translate(30px, 10px);
+        transform: translate(-60px, 0px) scale(1) rotateY(180deg);
+        opacity: 0;
     }
     100% {
-        transform: rotate(180deg) rotate(0deg) translate(30px, 170px);
+        transform: translate(0px, 0px) scale(0.4) rotateY(0deg);
+        opacity: 1; 
+    }
+  }
+
+  @keyframes fadeInGrayLine {
+    0% {
+        opacity: 0; 
+        transform: scale(1) rotate(360deg);
+    }
+    100% {
+        opacity: 1; 
+        transform: scale(0.4) rotate(0deg);
     }
   }
