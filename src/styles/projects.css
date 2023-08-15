@@ -210,8 +210,8 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
-    color: var(--light-text);
-    background-color: inherit;
+    color: #ffffff;
+    background-color: #ce7a34;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 500;
@@ -220,7 +220,7 @@
 }
 
 .projects-button:hover {
-    background-color: #3f8ed0;
+    background-color: #d87f35;
     color: #ffffff;
     transition: all 300ms ease-in;
 }

@@ -10,6 +10,7 @@ import { SplashScreen } from "./components/SplashScreen";
 import { useEffect, useState } from "react";
 import { keepTheme } from "./helpers/themes";
 import { NotFound } from "./components/NotFound";
+import { FadeInSection } from "./FadeInSection";
 import ReactGA from "react-ga4";
 
 function App() {
@@ -35,12 +36,23 @@ function App() {
               <SplashScreen></SplashScreen>
             ) : (
               <>
-                <Hero></Hero>
-                <About></About>
-                <Projects></Projects>
-                <Work></Work>
-                <Contact></Contact>
-                <Footer></Footer>
+                <Hero />
+
+                <FadeInSection>
+                  <About />
+                </FadeInSection>
+
+                <Projects />
+
+                <FadeInSection>
+                  <Work />
+                </FadeInSection>
+
+                <FadeInSection>
+                  <Contact />
+                </FadeInSection>
+
+                <Footer />
               </>
             )
           }
