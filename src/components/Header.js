@@ -41,22 +41,22 @@ export const Header = () => {
     });
   });
 
-  const trackLogoClicks = (e) => {
-    setClickCounter(clickCounter + 1);
-    if (clickCounter % 3 === 1) {
-      document.getElementById("logo-svg").style.transform = "rotate(360deg)";
-      document.getElementById("logo-svg").style.transition =
-        "transform 0.3s linear";
-    } else if (clickCounter % 3 === 2) {
-      document.getElementById("logo-svg").style.transform = "rotate(-90deg)";
-      document.getElementById("logo-svg").style.transition =
-        "transform 0.3s linear";
-    } else {
-      document.getElementById("logo-svg").style.transform = "rotate(270deg)";
-      document.getElementById("logo-svg").style.transition =
-        "transform 0.3s linear";
-    }
-  };
+  // const trackLogoClicks = () => {
+  //   setClickCounter(clickCounter + 1);
+  //   if (clickCounter % 3 === 1) {
+  //     document.getElementById("logo-svg").style.transform = "rotate(360deg)";
+  //     document.getElementById("logo-svg").style.transition =
+  //       "transform 0.3s linear";
+  //   } else if (clickCounter % 3 === 2) {
+  //     document.getElementById("logo-svg").style.transform = "rotate(-90deg)";
+  //     document.getElementById("logo-svg").style.transition =
+  //       "transform 0.3s linear";
+  //   } else {
+  //     document.getElementById("logo-svg").style.transform = "rotate(270deg)";
+  //     document.getElementById("logo-svg").style.transition =
+  //       "transform 0.3s linear";
+  //   }
+  // };
 
   return (
     <header>
@@ -67,7 +67,7 @@ export const Header = () => {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <Logo onClick={trackLogoClicks} />
+          <Logo />
           <button
             className="navbar-burger"
             data-target="navMenu"

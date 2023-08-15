@@ -7,7 +7,7 @@
 }
 
 .error-code {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 900;
     z-index: 1;
 }
@@ -27,15 +27,17 @@
     border: none;
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--light-text);
-    background-color: inherit;
-    padding: 10px;
-    cursor: pointer;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 300ms ease-in;
+    background-color: #3E8ED0;
 }
 
 .button.go-back-error:hover {
-    color: var(--light-text);
-    background-color: var(--hover-button);
+    color: #ffffff;
+    background-color: #3a82bd;
+    transition: all 300ms ease-in;
 }
 
 .button.go-back-error:focus {
@@ -44,8 +46,9 @@
 }
 
 .button.go-back-error i {
-    color: #3E8ED0;
-    margin-right: 10px;
+    color: #FFFFFF;
+    margin-right:10px;
+    transition: all 300ms ease-in;
 }
 
 

@@ -11,7 +11,6 @@ function Logo(props) {
       version="1.1"
       viewBox="0 0 70 70"
       onClick={props.onClick}
-      style={{ cursor: "pointer" }}
     >
       <g fillOpacity="1" strokeDasharray="none" strokeOpacity="1">
         <path
