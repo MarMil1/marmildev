@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../styles/header.css";
 import { Link } from "react-scroll";
 import { ToggleTheme } from "./ToggleTheme";
@@ -7,9 +7,6 @@ import Logo from "./Logo";
 
 export const Header = () => {
   const gaEventTracker = useAnalyticsEventTracker("Header");
-  const [clickCounter, setClickCounter] = useState(1);
-  // const [click, setClick] = useState(false);
-  // const isClicked = () => setClick(!click);
 
   useEffect(() => {
     /* This is a function that is being called on the navbar burger icon. It is using the
@@ -40,23 +37,6 @@ export const Header = () => {
       }
     });
   });
-
-  // const trackLogoClicks = () => {
-  //   setClickCounter(clickCounter + 1);
-  //   if (clickCounter % 3 === 1) {
-  //     document.getElementById("logo-svg").style.transform = "rotate(360deg)";
-  //     document.getElementById("logo-svg").style.transition =
-  //       "transform 0.3s linear";
-  //   } else if (clickCounter % 3 === 2) {
-  //     document.getElementById("logo-svg").style.transform = "rotate(-90deg)";
-  //     document.getElementById("logo-svg").style.transition =
-  //       "transform 0.3s linear";
-  //   } else {
-  //     document.getElementById("logo-svg").style.transform = "rotate(270deg)";
-  //     document.getElementById("logo-svg").style.transition =
-  //       "transform 0.3s linear";
-  //   }
-  // };
 
   return (
     <header>
